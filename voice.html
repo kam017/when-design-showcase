@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When, Voice &amp; Tone</title>
+  <meta name="description" content="The When voice and tone, how we sound, what we say, how we say it." />
+  <link rel="icon" type="image/svg+xml" href="when-logo.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" />
+  <link rel="stylesheet" href="showcase.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <a class="app-header__brand" href="./index.html">
+      <img src="when-logo.svg" alt="When" />
+      <span class="app-header__title">Design System <em>· Voice · Member</em></span>
+    </a>
+  </header>
+
+  <div class="shell">
+    <aside class="shell-rail" aria-label="System sections">
+      <a class="shell-rail__item" href="./index.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">home</span></span><span class="shell-rail__label">Home</span></a>
+      <a class="shell-rail__item" href="./brand.html" aria-current="page"><span class="shell-rail__icon"><span class="material-symbols-rounded">stars</span></span><span class="shell-rail__label">Brand</span></a>
+      <a class="shell-rail__item" href="./visual.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">palette</span></span><span class="shell-rail__label">Visual</span></a>
+      <a class="shell-rail__item" href="./design.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">widgets</span></span><span class="shell-rail__label">Design</span></a>
+      <a class="shell-rail__item" href="./governance.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">groups</span></span><span class="shell-rail__label">About</span></a>
+    </aside>
+
+    <aside class="shell-subnav" aria-label="On-page navigation">
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Voice · Member</p>
+        <nav class="shell-subnav__list">
+          <details class="shell-subnav__accordion" open>
+            <summary><span class="material-symbols-rounded">record_voice_over</span>Verbal identity<span class="material-symbols-rounded shell-subnav__chevron">chevron_right</span></summary>
+            <ul class="shell-subnav__sublist">
+              <li><a class="shell-subnav__item is-active" href="./voice.html">Voice · Member</a></li>
+              <li><a class="shell-subnav__item" href="./voice-sales.html">Voice · Sales</a></li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Voice</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#voice"><span class="material-symbols-rounded">graphic_eq</span>Five qualities</a>
+          <a class="shell-subnav__item" href="#tone"><span class="material-symbols-rounded">tune</span>Tone modulation</a>
+          <a class="shell-subnav__item" href="#words"><span class="material-symbols-rounded">text_snippet</span>Words</a>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">In practice</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#buttons"><span class="material-symbols-rounded">smart_button</span>Button labels</a>
+          <a class="shell-subnav__item" href="#empty"><span class="material-symbols-rounded">inbox</span>Empty states</a>
+          <a class="shell-subnav__item" href="#errors"><span class="material-symbols-rounded">error</span>Error messages</a>
+          <a class="shell-subnav__item" href="#loading"><span class="material-symbols-rounded">hourglass_empty</span>System status</a>
+          <a class="shell-subnav__item" href="#microcopy"><span class="material-symbols-rounded">notes</span>Microcopy</a>
+          <a class="shell-subnav__item" href="#privacy"><span class="material-symbols-rounded">shield</span>Privacy moments</a>
+          <a class="shell-subnav__item" href="#success"><span class="material-symbols-rounded">check_circle</span>Success</a>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Mechanics</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#mechanics"><span class="material-symbols-rounded">rule</span>Small rules, big effect</a>
+          <a class="shell-subnav__item" href="#speakers"><span class="material-symbols-rounded">groups_2</span>Who's speaking</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="shell-main">
+
+      <section class="page__hero">
+        <span class="page__eyebrow">Verbal Identity · Member</span>
+        <h1 class="page__title">How When sounds to members.</h1>
+        <p class="page__intro">
+          Health insurance is one of the most stressful things people deal with.
+          Our job is to make it feel solvable. Calm, clear, and honest, without
+          being clinical, cute, or over-promising. This is the voice we use with
+          the people who use the product, members navigating coverage decisions.
+        </p>
+        <p class="page__intro" style="font-size: var(--type-body-large-size); line-height: var(--type-body-large-lh); margin-top: var(--s-3); color: var(--color-on-surface-variant);">
+          Looking for how we sound to <strong>HR leaders, brokers, or partners?</strong>
+          See <a href="./voice-sales.html">Voice · Sales</a>.
+        </p>
+      </section>
+
+      <!-- Voice principles -->
+      <section class="section" id="voice">
+      <p class="section__label">01, Voice</p>
+      <h2 class="section__title">Five qualities that make a message sound like When.</h2>
+      <p class="section__intro">
+        Voice is who we are. It doesn't change. Tone is how we adjust, calmer when
+        someone's stuck, brighter when they've finished, quieter when the moment is
+        about them, not us.
+      </p>
+
+      <div class="voice-row">
+        <h3 class="voice-row__title">Calm, not cheerful</h3>
+        <p class="voice-row__body">
+          We don't celebrate the obvious. We don't add exclamation points to make
+          a process feel exciting. Saving someone money on a deductible is good
+          news; selling it as <em>amazing</em> makes them suspicious.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">Direct, not blunt</h3>
+        <p class="voice-row__body">
+          Say the thing. If a plan won't cover their doctor, say so. But don't
+          stop there, show what would. Direct without alternatives is just bad news.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">Plain, not dumbed down</h3>
+        <p class="voice-row__body">
+          We use the words people actually use, "deductible" stays; "coinsurance"
+          gets a one-line definition the first time it appears. We never invent
+          friendly substitutes for terms our users will see on their insurance card.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">Honest about uncertainty</h3>
+        <p class="voice-row__body">
+          When a number is an estimate, we say <em>estimate</em>. When we don't know,
+          we don't pretend. We never bury a hedge in fine print to make a headline
+          sound more confident than it is.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">In your corner</h3>
+        <p class="voice-row__body">
+          The user isn't a "member" or a "customer" or a "subscriber." They're a
+          person making a hard decision under pressure. We're the friend who's
+          done this before, never a chatbot, never a sales surface, never HR.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tone modulation --------------------------------------------------- -->
+      <section class="section" id="tone">
+      <p class="section__label">02, Tone</p>
+      <h2 class="section__title">Where the voice flexes.</h2>
+      <p class="section__intro">
+        Same voice, different volume. Tone shifts with what's happening for the user
+       , not what's happening in the product. A successful enrollment doesn't need
+        confetti. A failed plan search needs a clear next step, not an apology.
+      </p>
+
+      <div class="subsection">
+        <h3 class="subsection__title">Onboarding · curious and grounding</h3>
+        <p class="subsection__body">
+          The user is new. Establish that we know them, their employer reached out
+          to us, and explain what's coming. Don't overstate the value before they've
+          felt it.
+        </p>
+        <p class="example">"When your group health plan ends, you have options. We walk you through them, show you what each plan actually costs, and let you enroll in one place."</p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection__title">Decision moments · clear and unsoftened</h3>
+        <p class="subsection__body">
+          When the user has to choose, get out of the way. State the numbers, the
+          trade-offs, and what we'd do in their shoes. Don't fence-sit.
+        </p>
+        <p class="example">"This plan is $84 a month after your subsidy. Your doctor isn't in network, switching would cost about $200 a year more in office visits. Worth it if you want to keep her."</p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection__title">Mistakes &amp; errors · take responsibility, point forward</h3>
+        <p class="subsection__body">
+          When something breaks, we own it without melodrama. State the problem in
+          one sentence, then what to do next. Never apologize twice for the same thing.
+        </p>
+        <p class="example">"We couldn't reach the marketplace. Try again in a moment, or call us at (800) 555-WHEN and we'll finish this with you."</p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection__title">After enrollment · quiet confidence</h3>
+        <p class="subsection__body">
+          They picked a plan. The work happened. Confirm it cleanly, set the next
+          expectation, and step back.
+        </p>
+        <p class="example example--secondary">"Your application is in. The carrier will mail your member ID within 10 business days; coverage starts March 1."</p>
+      </div>
+    </section>
+
+    <!-- Words ------------------------------------------------------------- -->
+      <section class="section" id="words">
+      <p class="section__label">03, Words</p>
+      <h2 class="section__title">What we say, and what we don't.</h2>
+      <p class="section__intro">
+        A short list of specifics. The full glossary lives in Notion, this is the
+        page you'll come back to when you're writing.
+      </p>
+
+      <div class="wordlist">
+        <div class="wordlist__col wordlist__col--do">
+          <p class="wordlist__head">We say</p>
+          <ul>
+            <li>your plan, your coverage, your premium</li>
+            <li>walk you through, show you, help you decide</li>
+            <li>estimate (when it's an estimate)</li>
+            <li>cost · price · monthly · per year</li>
+            <li>doctor · prescription · provider · network</li>
+            <li>when you're ready · take your time</li>
+            <li>your employer set this up for you</li>
+            <li>we'll send you · we sent you · you'll get</li>
+          </ul>
+        </div>
+        <div class="wordlist__col wordlist__col--dont">
+          <p class="wordlist__head">We don't say</p>
+          <ul>
+            <li>member · subscriber · customer · user</li>
+            <li>seamlessly · effortlessly · simply · just</li>
+            <li>amazing · awesome · perfect · easy</li>
+            <li>premium pricing · best-in-class · industry-leading</li>
+            <li>doc · script · Rx (in user copy)</li>
+            <li>hit a snag · uh oh · whoops · oops</li>
+            <li>HR sent us your information</li>
+            <li>"Let's…" as the start of every prompt</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Examples per surface ---------------------------------------------- -->
+      <section class="section" id="buttons">
+      <p class="section__label">04, In practice</p>
+      <h2 class="section__title">Surface by surface.</h2>
+      <p class="section__intro">
+        Every component carries copy. Here's how the voice lands on each one, and
+        what to avoid.
+      </p>
+
+      <!-- Buttons -->
+      <div class="subsection">
+        <h3 class="subsection__title">Button labels</h3>
+        <p class="subsection__body">
+          Verb first. Tell them what happens when they press. Never use "Submit," "Click here,"
+          or a label that could fit on any button anywhere.
+        </p>
+        <div class="principle">
+          <div class="do">
+            <p class="do__label">Do</p>
+            <ul style="margin: 0; padding-left: var(--s-5);">
+              <li>Send me a sign-in link</li>
+              <li>See my plans</li>
+              <li>Add a prescription</li>
+              <li>Save and continue</li>
+              <li>Talk to a person</li>
+            </ul>
+          </div>
+          <div class="dont">
+            <p class="dont__label">Don't</p>
+            <ul style="margin: 0; padding-left: var(--s-5);">
+              <li>Submit</li>
+              <li>Continue</li>
+              <li>Click here</li>
+              <li>Next step</li>
+              <li>Get started now!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty states -->
+      <div class="subsection">
+        <h3 class="subsection__title" id="empty">Empty states</h3>
+        <p class="subsection__body">
+          Tell them why it's empty. Show them what fills it. Then offer the action that
+          starts the fill. Never apologize for an empty state, it's the right state until
+          they take the first step.
+        </p>
+        <p class="example">"No prescriptions yet. Add the medicines you take regularly and we'll show you which plans cover them."</p>
+      </div>
+
+      <!-- Errors -->
+      <div class="subsection">
+        <h3 class="subsection__title" id="errors">Error messages</h3>
+        <p class="subsection__body">
+          One sentence. State the problem. Offer a path. Tell them how to reach us if the
+          path doesn't work. No system codes in user-facing copy.
+        </p>
+        <div class="principle">
+          <div class="do">
+            <p class="do__label">Do</p>
+            <p style="margin: 0;">"That email doesn't look right. Double-check the address, we'll send you a new sign-in link."</p>
+          </div>
+          <div class="dont">
+            <p class="dont__label">Don't</p>
+            <p style="margin: 0;">"Error code 422: Invalid email format. Please correct the email and try again."</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading / system status -->
+      <div class="subsection">
+        <h3 class="subsection__title" id="loading">System status &amp; loading</h3>
+        <p class="subsection__body">
+          State what's happening. Don't fill silence with personality. A 2-second spinner
+          doesn't need a "Hang tight!", it needs a quiet status word.
+        </p>
+        <div class="principle">
+          <div class="do">
+            <p class="do__label">Do</p>
+            <ul style="margin: 0; padding-left: var(--s-5);">
+              <li>Looking up your case…</li>
+              <li>Sending your sign-in link…</li>
+              <li>Pulling plans for your area…</li>
+            </ul>
+          </div>
+          <div class="dont">
+            <p class="dont__label">Don't</p>
+            <ul style="margin: 0; padding-left: var(--s-5);">
+              <li>Hang tight! We're on it…</li>
+              <li>Magic is happening…</li>
+              <li>Just a sec, almost there!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Microcopy -->
+      <div class="subsection">
+        <h3 class="subsection__title" id="microcopy">Microcopy &amp; placeholders</h3>
+        <p class="subsection__body">
+          Placeholder text is for shape, not instruction. Required guidance lives outside
+          the field, where it doesn't disappear the moment someone starts typing.
+        </p>
+        <div class="principle">
+          <div class="do">
+            <p class="do__label">Do</p>
+            <p style="margin: 0;">
+              Label: <em>Work email</em><br />
+              Placeholder: <em>you@company.com</em><br />
+              Help (always visible): <em>The address your employer uses to reach you</em>
+            </p>
+          </div>
+          <div class="dont">
+            <p class="dont__label">Don't</p>
+            <p style="margin: 0;">
+              Label: <em>Email</em><br />
+              Placeholder: <em>Enter your work email here</em><br />
+              <em>(no help; instruction vanishes on focus)</em>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Privacy & sensitive -->
+      <div class="subsection">
+        <h3 class="subsection__title" id="privacy">Privacy &amp; sensitive moments</h3>
+        <p class="subsection__body">
+          When we ask for health, household, or financial information, lead with what
+          we'll do with it. Be specific about who can see it, by name, not "third parties."
+        </p>
+        <p class="example example--secondary">"No one at your employer can see which plans you look at, the prescriptions you list, or who's in your household. Your choices stay between you and the carrier."</p>
+      </div>
+
+      <!-- Success -->
+      <div class="subsection">
+        <h3 class="subsection__title" id="success">Success &amp; confirmation</h3>
+        <p class="subsection__body">
+          Tell them what happened, what to expect next, and when. Set the next moment
+          for them so they're not refreshing for confirmation.
+        </p>
+        <div class="principle">
+          <div class="do">
+            <p class="do__label">Do</p>
+            <p style="margin: 0;">"Your application is in. The carrier will email your member ID within 10 business days. Coverage starts March 1."</p>
+          </div>
+          <div class="dont">
+            <p class="dont__label">Don't</p>
+            <p style="margin: 0;">"🎉 Yay! You did it! Your enrollment is complete, congrats on taking care of yourself!"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mechanics --------------------------------------------------------- -->
+      <section class="section" id="mechanics">
+      <p class="section__label">05, Mechanics</p>
+      <h2 class="section__title">Small rules with big effect.</h2>
+
+      <div class="voice-row">
+        <h3 class="voice-row__title">Sentence case</h3>
+        <p class="voice-row__body">
+          Buttons, labels, headers, and titles all use sentence case. Title Case Feels Like A
+          Press Release. We're not a press release.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">No em-dashes</h3>
+        <p class="voice-row__body">
+          The em-dash is a tell that an LLM wrote the copy. Use a comma, a colon, or split
+          the sentence. We earn pauses; we don't insert them.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">No italic for emphasis</h3>
+        <p class="voice-row__body">
+          Italic is reserved for proper titles (a plan name, a publication, a literal quote).
+          If something needs emphasis, the sentence isn't doing its job.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">First name, used sparingly</h3>
+        <p class="voice-row__body">
+          Address the user by name once on entry. After that, "you" is enough. "Hi Sam!"
+          three times in a single screen is uncanny, not friendly.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">Numbers as numerals</h3>
+        <p class="voice-row__body">
+          $84. 30 days. 4 dependents. Words for numbers slow scanning; numerals fit the
+          way people actually read prices and dates.
+        </p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">Cite your sources</h3>
+        <p class="voice-row__body">
+          When we surface a number from a carrier, an estimate, or a third party, attribute it.
+          "From the marketplace." "Carrier estimate." "Based on what you've told us."
+        </p>
+      </div>
+    </section>
+
+    <!-- Personas of where it lives --------------------------------------- -->
+      <section class="section" id="speakers">
+      <p class="section__label">06, Who's speaking</p>
+      <h2 class="section__title">When, Jamie, the carrier.</h2>
+      <p class="section__intro">
+        Three speakers. They sound different on purpose.
+      </p>
+
+      <div class="voice-row">
+        <h3 class="voice-row__title">When (the platform)</h3>
+        <p class="voice-row__body">
+          The neutral voice. Explains, presents, sets expectations. First-person plural
+          ("we") for system messages and broad announcements.
+        </p>
+        <p class="example" style="margin-top: var(--s-3);">"We pulled 6 plans for your zip code."</p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">Jamie (the AI guide)</h3>
+        <p class="voice-row__body">
+          Conversational, first-person singular ("I"), proactive but never pushy.
+          Asks one thing at a time. Always offers a way to skip the conversation
+          and use the form directly.
+        </p>
+        <p class="example" style="margin-top: var(--s-3);">"Want me to check whether your current doctor is covered? Type their name and I'll pull it up."</p>
+      </div>
+      <div class="voice-row">
+        <h3 class="voice-row__title">The carrier</h3>
+        <p class="voice-row__body">
+          We quote carriers in their own words inside quotation marks; we don't paraphrase
+          their disclaimers in ways that could be wrong. When we summarize, we attribute it.
+        </p>
+      </div>
+    </section>
+
+    </main>
+  </div>
+
+  
+    <div class="footer-meta">
+      <div class="footer-meta__line">When Design System · Voice · Member · v0.5 · May 2026</div>
+      <div class="footer-meta__credit">System design + build by <a href="#" class="footer-meta__link">Keith Maraccini Creative</a></div>
+    </div>
+  
+
+  <script>
+    // Sidebar TOC: highlight the section/subsection nearest the viewport top.
+    const targets = document.querySelectorAll('[id]');
+    const tocLinks = document.querySelectorAll('.sidebar__item');
+    const setActive = (id) => {
+      tocLinks.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        const visible = entries.filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: '-88px 0px -60% 0px', threshold: 0 });
+      targets.forEach(t => io.observe(t));
+    }
+  </script>
+</body>
+</html>

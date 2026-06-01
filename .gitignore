@@ -1,0 +1,9 @@
+# Vercel
+.vercel
+
+# macOS
+.DS_Store
+
+# Internal-only / working material (not part of the public showcase)
+_inbox/
+STATUS_SWOT.md

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When, Design System</title>
+  <meta name="description" content="When design system: layout, tokens, components, patterns, modules, accessibility." />
+  <link rel="icon" type="image/svg+xml" href="when-logo.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" />
+  <link rel="stylesheet" href="showcase.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <a class="app-header__brand" href="./index.html">
+      <img src="when-logo.svg" alt="When" />
+      <span class="app-header__title">Design System <em>· Design</em></span>
+    </a>
+  </header>
+
+  <div class="shell">
+    <aside class="shell-rail" aria-label="System sections">
+      <a class="shell-rail__item" href="./index.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">home</span></span><span class="shell-rail__label">Home</span></a>
+      <a class="shell-rail__item" href="./brand.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">stars</span></span><span class="shell-rail__label">Brand</span></a>
+      <a class="shell-rail__item" href="./visual.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">palette</span></span><span class="shell-rail__label">Visual</span></a>
+      <a class="shell-rail__item" href="./design.html" aria-current="page"><span class="shell-rail__icon"><span class="material-symbols-rounded">widgets</span></span><span class="shell-rail__label">Design</span></a>
+      <a class="shell-rail__item" href="./governance.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">groups</span></span><span class="shell-rail__label">About</span></a>
+    </aside>
+
+    <aside class="shell-subnav" aria-label="On-page navigation">
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">System</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#layout"><span class="material-symbols-rounded">view_quilt</span>Layout</a>
+          <a class="shell-subnav__item" href="#tokens"><span class="material-symbols-rounded">data_object</span>Tokens</a>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Library</p>
+        <nav class="shell-subnav__list">
+          <details class="shell-subnav__accordion" open>
+            <summary><span class="material-symbols-rounded">smart_button</span>Components<span class="material-symbols-rounded shell-subnav__chevron">chevron_right</span></summary>
+            <ul class="shell-subnav__sublist">
+              <li><a class="shell-subnav__item" href="#buttons">Buttons</a></li>
+              <li><a class="shell-subnav__item" href="#icon-buttons">Icon buttons</a></li>
+              <li><a class="shell-subnav__item" href="#fabs">FAB</a></li>
+              <li><a class="shell-subnav__item" href="#fields">Text fields</a></li>
+              <li><a class="shell-subnav__item" href="#chips">Chips</a></li>
+              <li><a class="shell-subnav__item" href="#cards">Cards</a></li>
+              <li><a class="shell-subnav__item" href="#tabs">Tab strip</a></li>
+              <li><a class="shell-subnav__item" href="#list">List items</a></li>
+              <li><a class="shell-subnav__item" href="#dialog">Dialog</a></li>
+              <li><a class="shell-subnav__item" href="#snackbar">Snackbar</a></li>
+            </ul>
+          </details>
+          <details class="shell-subnav__accordion">
+            <summary><span class="material-symbols-rounded">view_module</span>Modules<span class="material-symbols-rounded shell-subnav__chevron">chevron_right</span></summary>
+            <ul class="shell-subnav__sublist">
+              <li><a class="shell-subnav__item" href="#jamie">Jamie chat</a></li>
+              <li><a class="shell-subnav__item" href="#plan-card">Plan card</a></li>
+              <li><a class="shell-subnav__item" href="#steps">Steps</a></li>
+              <li><a class="shell-subnav__item" href="#lede-trust">Lede + Trust</a></li>
+            </ul>
+          </details>
+          <details class="shell-subnav__accordion">
+            <summary><span class="material-symbols-rounded">hourglass_empty</span>Patterns &amp; loading<span class="material-symbols-rounded shell-subnav__chevron">chevron_right</span></summary>
+            <ul class="shell-subnav__sublist">
+              <li><a class="shell-subnav__item" href="#skeletons">Skeletons</a></li>
+              <li><a class="shell-subnav__item" href="#progress">Progress</a></li>
+              <li><a class="shell-subnav__item" href="#empty">Empty state</a></li>
+              <li><a class="shell-subnav__item" href="#error">Error state</a></li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Reference</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#accessibility"><span class="material-symbols-rounded">accessibility_new</span>Accessibility</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="shell-main">
+
+      <section class="page__hero">
+        <span class="page__eyebrow">Design System</span>
+        <h1 class="page__title">The build kit.</h1>
+        <p class="page__intro">
+          Tokens, components, modules, patterns. Every primitive an internal
+          team or an outside partner needs to ship a When experience that feels
+          consistent across products and domains.
+        </p>
+      </section>
+
+      <!-- 00 LAYOUT (NEW) -->
+      <section class="section" id="layout">
+        <p class="section__label">00, System</p>
+        <h2 class="section__title">Layout.</h2>
+        <p class="section__intro">
+          4dp baseline grid, three density modes, responsive column sizes scaled
+          for content reading width (max 64ch for body text). Every spacing
+          value lives on the grid; every breakpoint is named.
+        </p>
+
+        <h3 class="subsection__title">Breakpoints</h3>
+        <div class="list">
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">smartphone</span></div><div class="list__item-text"><div class="list__item-title">Compact · &lt;600dp</div><div class="list__item-supporting">Phone portrait. Single column. Drawer-style nav. Section-tabs collapses to icons.</div></div></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">tablet</span></div><div class="list__item-text"><div class="list__item-title">Medium · 600 – 1023dp</div><div class="list__item-supporting">Tablet portrait, foldable. Two column. Nav rail visible, side-sheet modal.</div></div></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">laptop</span></div><div class="list__item-text"><div class="list__item-title">Expanded · 1024 – 1599dp</div><div class="list__item-supporting">Tablet landscape, laptop. Three column. Nav rail + content + right-pane.</div></div></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">desktop_windows</span></div><div class="list__item-text"><div class="list__item-title">Large · 1600dp+</div><div class="list__item-supporting">Desktop. Full chrome. Content centered with viewport gutters.</div></div></div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Density modes</h3>
+        <p class="subsection__body">
+          Three density tiers tune internal spacing without changing visual
+          hierarchy. Set <code>data-density="tight|normal|loose"</code> on the
+          <code>&lt;html&gt;</code> element. Every semantic spacing token flexes;
+          the 4dp grid is preserved in every mode.
+        </p>
+      </section>
+
+      <!-- 0.5 TOKENS (NEW) -->
+      <section class="section" id="tokens">
+        <p class="section__label">01, System</p>
+        <h2 class="section__title">Tokens.</h2>
+        <p class="section__intro">
+          Three-tier architecture: <strong>md.ref</strong> is the static
+          reference (palettes, raw spacing, typeface families).
+          <strong>md.sys</strong> is theme-aware mapping (color roles, shape
+          ladder, motion). <strong>md.comp</strong> is per-component aliasing.
+          Component CSS only consumes <code>--md-comp-*</code>.
+        </p>
+
+        <div class="grid-3">
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">md.ref · reference</p>
+            <p class="t-body-m" style="margin: 0; color: var(--color-on-surface-variant);">Palettes, raw spacing scale, typeface families, base shape values. No theming, no context. <code>--md-ref-palette-primary-40</code>, <code>--md-ref-spacing-4</code>.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">md.sys · system</p>
+            <p class="t-body-m" style="margin: 0; color: var(--color-on-surface-variant);">Theme-aware mappings, color roles (primary, on-primary), shape corner ladder, elevation, motion. Dark theme overrides md.sys only. <code>--md-sys-color-primary</code>.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">md.comp · component</p>
+            <p class="t-body-m" style="margin: 0; color: var(--color-on-surface-variant);">Per-component aliases that resolve to sys + ref. Component CSS reads only these. <code>--md-comp-button-container-color</code>.</p>
+          </div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Token downloads</h3>
+        <div class="list">
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">data_object</span></div><div class="list__item-text"><div class="list__item-title">palette.json</div><div class="list__item-supporting">Color palette · DTCG format · with WCAG ratings</div></div><a href="assets/colors/palette.json" download class="block--inline-link">download</a></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">data_object</span></div><div class="list__item-text"><div class="list__item-title">tokens.css</div><div class="list__item-supporting">Full CSS variable set · pending export from <code>showcase.css</code></div></div><span class="block--inline-link" style="opacity: 0.5;">pending</span></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">data_object</span></div><div class="list__item-text"><div class="list__item-title">tokens.json</div><div class="list__item-supporting">Full design tokens · DTCG format · pending</div></div><span class="block--inline-link" style="opacity: 0.5;">pending</span></div>
+        </div>
+
+        <p class="subsection__body" style="margin-top: var(--s-8);">
+          For the full color palette and surface ladder, see <a href="./visual.html#color">Visual · Color</a>. For the type scale, see <a href="./visual.html#type">Visual · Type</a>.
+        </p>
+      </section>
+
+      <!-- (Original Color/Type/Spacing/Shape/Elevation/Motion sections removed,
+           they now live on /visual.html. Components, Modules, Loading continue below.) -->
+
+      <!-- ===========================================================
+           COMPONENTS
+           =========================================================== -->
+
+      <!-- BUTTONS -->
+      <section class="section" id="buttons">
+        <p class="section__label">Components · 01 <span class="live-badge">Press me</span></p>
+        <h2 class="section__title">Buttons</h2>
+        <p class="section__intro">
+          Five styles, four sizes. Press signature: transform <code>scale(0.96)</code> +
+          border-radius <code>corner-full → corner-large-increased</code> on emphasized curve over
+          150ms. Filled lifts to elevation 1 on hover. Disabled is 38% content / 12%
+          container per MD3 spec.
+        </p>
+
+        <h3 class="subsection__title">Styles</h3>
+        <div class="grid-2">
+          <div class="demo">
+            <p class="demo__label">Filled · primary action</p>
+            <div class="demo__body"><button class="btn btn--filled"><span class="material-symbols-rounded">arrow_forward</span>Send me a sign-in link</button></div>
+            <p class="demo__meta">background: primary · color: on-primary<br/>hover: elevation 0 → 1, state-layer @ 8%<br/>press: scale 0.96 · corner-full → md · 150ms emphasized</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Tonal · second action</p>
+            <div class="demo__body"><button class="btn btn--tonal">Compare plans</button></div>
+            <p class="demo__meta">background: secondary-container<br/>Same press signature as filled. Pairs with one filled, never two filled side by side.</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Outlined · alternative</p>
+            <div class="demo__body"><button class="btn btn--outlined">Skip for now</button></div>
+            <p class="demo__meta">1dp outline · color: primary · state-layer paints over outline at primary @ 8%/10%</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Text · low emphasis</p>
+            <div class="demo__body"><button class="btn btn--text">Use a different email</button></div>
+            <p class="demo__meta">No background, no border, no lift, no shape-morph.<br/>State-layer paints around the label only.</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Elevated · ambient</p>
+            <div class="demo__body"><button class="btn btn--elevated">Save plan</button></div>
+            <p class="demo__meta">surface-container-low + level-1 shadow<br/>Hover: level-1 → level-2</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Disabled · all styles</p>
+            <div class="demo__body"><button class="btn btn--filled" disabled>Send</button><button class="btn btn--tonal" disabled>Compare</button><button class="btn btn--outlined" disabled>Skip</button></div>
+            <p class="demo__meta">Container: 12% on-surface · Content: 38% on-surface · pointer-events: none</p>
+          </div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Sizes</h3>
+        <div class="demo">
+          <p class="demo__label">XS → XL · same style, four heights</p>
+          <div class="demo__body" style="align-items: flex-end;">
+            <button class="btn btn--filled btn--xs">XS · 32dp</button>
+            <button class="btn btn--filled btn--sm">SM · 40dp</button>
+            <button class="btn btn--filled">Default · 40dp</button>
+            <button class="btn btn--filled btn--lg">LG · 56dp</button>
+            <button class="btn btn--filled btn--xl">XL · 96dp</button>
+          </div>
+          <p class="demo__meta">Type scales with container: label-large → label-large → label-large → title-medium → title-large<br/>Press scale value is 0.96 across all sizes; shape-morph target is corner-large-increased (20dp) across all, the rounded family never breaks into a hard corner.</p>
+        </div>
+      </section>
+
+      <!-- ICON BUTTONS -->
+      <section class="section" id="icon-buttons">
+        <p class="section__label">Components · 02 <span class="live-badge">Press me</span></p>
+        <h2 class="section__title">Icon buttons</h2>
+        <p class="section__intro">
+          40dp standard. Press signature: scale 0.92 + shape-morph corner-full → corner-large-increased.
+          Slightly more aggressive scale than text buttons because the touch target is smaller.
+        </p>
+
+        <div class="demo">
+          <p class="demo__label">Four variants</p>
+          <div class="demo__body">
+            <button class="icon-btn"><span class="material-symbols-rounded">favorite</span></button>
+            <button class="icon-btn icon-btn--filled"><span class="material-symbols-rounded">favorite</span></button>
+            <button class="icon-btn icon-btn--tonal"><span class="material-symbols-rounded">favorite</span></button>
+            <button class="icon-btn icon-btn--outlined"><span class="material-symbols-rounded">favorite</span></button>
+          </div>
+          <p class="demo__meta">Standard · Filled · Tonal · Outlined<br/>Symbol = Material Symbols Rounded · 24dp · weight 400 · grade 0 · FILL 0</p>
+        </div>
+      </section>
+
+      <!-- FAB -->
+      <section class="section" id="fabs">
+        <p class="section__label">Components · 03 <span class="live-badge">Press me</span></p>
+        <h2 class="section__title">Floating Action Button</h2>
+        <p class="section__intro">
+          One per surface, reserved for the highest-priority action. 56dp standard, 96dp
+          hero. Press uses spring · fast-spatial (the more aggressive overshoot, a real
+          spring on the FAB feels delightful, not jittery, because the size carries it).
+        </p>
+
+        <div class="demo">
+          <p class="demo__label">Three sizes + extended</p>
+          <div class="demo__body" style="gap: var(--s-5); align-items: center;">
+            <button class="fab fab--sm"><span class="material-symbols-rounded">add</span></button>
+            <button class="fab"><span class="material-symbols-rounded">add</span></button>
+            <button class="fab fab--lg"><span class="material-symbols-rounded">add</span></button>
+            <button class="fab fab--extended"><span class="material-symbols-rounded">edit</span>Save plan</button>
+          </div>
+          <p class="demo__meta">Small 40dp · standard 56dp · large 96dp · extended (auto width).<br/>Resting elevation 3 · hover elevation 4. Press: scale 0.96 · corner morphs to extra-extra-large (48dp).</p>
+        </div>
+      </section>
+
+      <!-- TEXT FIELDS -->
+      <section class="section" id="fields">
+        <p class="section__label">Components · 04 <span class="live-badge">Focus me</span></p>
+        <h2 class="section__title">Text fields</h2>
+        <p class="section__intro">
+          Outlined, 56dp tall, corner-extra-small (4dp). Labels sit above the field.
+          On focus, the outline shifts to primary and thickens from 1dp to 2dp with
+          a -1dp padding compensation, no layout jump.
+        </p>
+
+        <div class="grid-2">
+          <div class="demo">
+            <p class="demo__label">Default</p>
+            <div class="demo__body"><label class="field"><span class="field__label">Work email</span><input class="input" type="email" placeholder="you@company.com" /><span class="field__help">The address your employer uses to reach you</span></label></div>
+            <p class="demo__meta">border-color · border-width transition · emphasized · 150ms<br/>Placeholder at on-surface-variant 60% opacity</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Error state</p>
+            <div class="demo__body"><label class="field"><span class="field__label">Date of birth</span><input class="input" type="text" placeholder="MM / DD / YYYY" aria-invalid="true" value="13/45/1850" /><span class="field__error"><span class="material-symbols-rounded" style="font-size: 16px;">error</span>Use the format MM / DD / YYYY</span></label></div>
+            <p class="demo__meta">aria-invalid="true" · outline color → error<br/>Error icon + helper text below, never inside the field</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Disabled</p>
+            <div class="demo__body"><label class="field"><span class="field__label">Employer</span><input class="input" type="text" value="Northwind" disabled /></label></div>
+            <p class="demo__meta">38% content opacity · pointer-events: none<br/>Background lifts to surface-container so disabled reads as "set, not editable"</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">With trailing affordance</p>
+            <div class="demo__body" style="position: relative; width: 100%;"><label class="field" style="position: relative;"><span class="field__label">Search</span><input class="input" type="search" placeholder="Find a doctor or facility" style="padding-right: 48px;" /><button class="icon-btn" style="position: absolute; right: 4px; bottom: 4px;"><span class="material-symbols-rounded">search</span></button></label></div>
+            <p class="demo__meta">Trailing icon button inset inside the input.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHIPS -->
+      <section class="section" id="chips">
+        <p class="section__label">Components · 05 <span class="live-badge">Click to toggle</span></p>
+        <h2 class="section__title">Chips</h2>
+        <p class="section__intro">
+          32dp tall, corner-small (8dp). Selected chips fill with secondary-container.
+          Background + border + leading-check appear together on the emphasized curve.
+        </p>
+
+        <div class="demo">
+          <p class="demo__label">Filter chips, single-select</p>
+          <div class="demo__body" id="chip-row">
+            <button class="chip is-selected"><span class="material-symbols-rounded">check</span>Mostly checkups</button>
+            <button class="chip">Regular care</button>
+            <button class="chip">Managing a condition</button>
+            <button class="chip">Planning something big</button>
+          </div>
+          <p class="demo__meta">Background + border-color transition · 150ms emphasized<br/>Click any chip to swap selection</p>
+        </div>
+      </section>
+
+      <!-- CARDS -->
+      <section class="section" id="cards">
+        <p class="section__label">Components · 06 <span class="live-badge">Hover</span></p>
+        <h2 class="section__title">Cards</h2>
+        <p class="section__intro">
+          Filled cards: surface-container-lowest + elevation 1, rest. Outlined cards:
+          surface + outline-variant border, no elevation. Both: corner-large (16dp).
+          Interactive cards lift on hover (level 1 → 3 + translateY -2px).
+        </p>
+
+        <div class="grid-2">
+          <div class="card card--interactive">
+            <p class="t-title-l" style="margin: 0 0 var(--s-3);">Filled card · interactive</p>
+            <p class="t-body-m" style="margin: 0; color: var(--color-on-surface-variant);">Hover to see the elevation + lift transition. Resting state is level 1.</p>
+          </div>
+          <div class="card card--outlined card--interactive">
+            <p class="t-title-l" style="margin: 0 0 var(--s-3);">Outlined card · interactive</p>
+            <p class="t-body-m" style="margin: 0; color: var(--color-on-surface-variant);">Same hover behavior, but starts at level 0 with an outline-variant border.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB STRIP -->
+      <section class="section" id="tabs">
+        <p class="section__label">Components · 07 <span class="live-badge">Resize window</span></p>
+        <h2 class="section__title">Tab strip</h2>
+        <p class="section__intro">
+          Pills that become circles. At wide widths each tab is a label-pill auto-sized
+          to its content. Below 600dp container width, the strip transitions to
+          icon-only circles on spring · spatial, pills collapse to perfect circles
+          (W = H = 64dp), bar shrinks to N × 64dp, sibling buttons touch.
+        </p>
+
+        <div class="card card--outlined" style="padding: var(--s-8);">
+          <div class="tabstrip" id="tabstrip-demo">
+            <div class="tabstrip__bar">
+              <button class="tabstrip__btn is-selected"><span class="material-symbols-rounded tabstrip__btn-icon">place</span><span class="tabstrip__btn-label">Where</span></button>
+              <button class="tabstrip__btn"><span class="material-symbols-rounded tabstrip__btn-icon">savings</span><span class="tabstrip__btn-label">Subsidy</span></button>
+              <button class="tabstrip__btn"><span class="material-symbols-rounded tabstrip__btn-icon">favorite</span><span class="tabstrip__btn-label">Health</span></button>
+              <button class="tabstrip__btn"><span class="material-symbols-rounded tabstrip__btn-icon">medical_services</span><span class="tabstrip__btn-label">Doctors</span></button>
+              <button class="tabstrip__btn"><span class="material-symbols-rounded tabstrip__btn-icon">medication</span><span class="tabstrip__btn-label">Rx</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIST -->
+      <section class="section" id="list">
+        <p class="section__label">Components · 08</p>
+        <h2 class="section__title">List items</h2>
+        <p class="section__intro">
+          Two-line list with a leading avatar slot. Hover swaps the surface tier.
+          Use for plan candidates, dependents, prescriptions, member records.
+        </p>
+
+        <div class="list">
+          <div class="list__item">
+            <div class="list__item-avatar"><span class="material-symbols-rounded">person</span></div>
+            <div class="list__item-text">
+              <div class="list__item-title">Sam Patel</div>
+              <div class="list__item-supporting">Primary · DOB 04/12/1988</div>
+            </div>
+            <span class="material-symbols-rounded" style="color: var(--color-on-surface-variant);">chevron_right</span>
+          </div>
+          <div class="list__item">
+            <div class="list__item-avatar"><span class="material-symbols-rounded">family_restroom</span></div>
+            <div class="list__item-text">
+              <div class="list__item-title">Priya Patel</div>
+              <div class="list__item-supporting">Spouse · DOB 09/02/1990</div>
+            </div>
+            <span class="material-symbols-rounded" style="color: var(--color-on-surface-variant);">chevron_right</span>
+          </div>
+          <div class="list__item">
+            <div class="list__item-avatar"><span class="material-symbols-rounded">child_care</span></div>
+            <div class="list__item-text">
+              <div class="list__item-title">Add a dependent</div>
+              <div class="list__item-supporting">Spouse, child, or other</div>
+            </div>
+            <span class="material-symbols-rounded" style="color: var(--color-primary);">add</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIALOG -->
+      <section class="section" id="dialog">
+        <p class="section__label">Components · 09</p>
+        <h2 class="section__title">Dialog</h2>
+        <p class="section__intro">
+          Reserved for decisions that block the rest of the surface. Corner-extra-large
+          (28dp), level-3 elevation, max-width 420dp. Leading icon in a primary-container
+          disc when the dialog conveys system state.
+        </p>
+
+        <div class="demo__stage" style="background: var(--color-scrim); border-radius: var(--shape-md); padding: var(--s-12);">
+          <div class="dialog">
+            <div class="dialog__icon"><span class="material-symbols-rounded">verified</span></div>
+            <h3 class="dialog__title">Switch to a new plan?</h3>
+            <p class="dialog__body">Your current plan ends March 31. The new plan takes effect April 1. We'll email you a confirmation either way.</p>
+            <div class="dialog__actions">
+              <button class="btn btn--text">Cancel</button>
+              <button class="btn btn--filled">Confirm switch</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SNACKBAR -->
+      <section class="section" id="snackbar">
+        <p class="section__label">Components · 10</p>
+        <h2 class="section__title">Snackbar</h2>
+        <p class="section__intro">
+          Briefly confirms an action took place. Inverse surface, level-3 elevation,
+          corner-extra-small. Action labels in primary-container so they read against
+          the inverse surface.
+        </p>
+        <div class="demo">
+          <div class="demo__body">
+            <div class="snackbar">
+              Your plan was saved.
+              <button class="snackbar__action">Undo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================================================
+           MODULES
+           =========================================================== -->
+
+      <!-- JAMIE -->
+      <section class="section" id="jamie">
+        <p class="section__label">Modules · 01 <span class="live-badge">Live</span></p>
+        <h2 class="section__title">Jamie · the AI guide</h2>
+        <p class="section__intro">
+          The When-specific chat module. First-person ("I"), one question at a time,
+          always offers a way to skip back to forms. Bubble entrances ride spring ·
+          spatial. Typing indicator uses spring · effects per dot with staggered delay.
+        </p>
+
+        <div class="grid-2">
+          <div class="jamie">
+            <div class="jamie__header">
+              <div class="jamie__avatar">J</div>
+              <div style="flex: 1;">
+                <div class="jamie__name">Jamie</div>
+                <div class="jamie__status">Online</div>
+              </div>
+              <button class="icon-btn"><span class="material-symbols-rounded">close</span></button>
+            </div>
+            <div class="jamie__log">
+              <div class="jamie__bubble jamie__bubble--system">Conversation started · 2 min ago</div>
+              <div class="jamie__bubble jamie__bubble--assistant">Hi Sam, I can help you compare your three top plans side by side. Want me to start with monthly cost or with which doctors are covered?</div>
+              <div class="jamie__bubble jamie__bubble--user">Doctors first.</div>
+              <div class="jamie__bubble jamie__bubble--assistant">Got it. Dr. Lee is in-network on two of the three plans. The third (Anthem PPO) would put her out-of-network, about $200 / year more in office visits.</div>
+              <div class="jamie__typing"><span></span><span></span><span></span></div>
+            </div>
+            <div class="jamie__suggested">
+              <button class="chip">Show plan details</button>
+              <button class="chip">Compare costs</button>
+              <button class="chip">What's a deductible?</button>
+            </div>
+            <div class="jamie__composer">
+              <input class="input" type="text" placeholder="Ask Jamie anything..." />
+              <button class="jamie__send"><span class="material-symbols-rounded">send</span></button>
+            </div>
+          </div>
+
+          <div class="demo" style="background: var(--color-surface); padding: var(--s-7);">
+            <p class="demo__label">Anatomy</p>
+            <p class="demo__meta" style="font-family: var(--font-body); font-size: var(--type-body-medium-size); color: var(--color-on-surface); line-height: 1.6;">
+              <strong>Header</strong>, avatar (tertiary disc) · name · status indicator (green dot) · close icon button<br/><br/>
+              <strong>Log</strong>, system bubbles are centered + faint, assistant bubbles are surface-container-high + bottom-left rounded sharp, user bubbles are primary + bottom-right sharp.<br/><br/>
+              <strong>Typing</strong>, three dots, staggered animation, in an assistant-shaped bubble. Appears + disappears around assistant turn.<br/><br/>
+              <strong>Suggested replies</strong>, chip row above the composer. One tap fills the composer or sends directly.<br/><br/>
+              <strong>Composer</strong>, text field + circular send button. Send button shape-morphs to corner-large-increased on press.<br/><br/>
+              <strong>Voice rule</strong>, Jamie says "I" not "we". Asks one thing at a time. Always offers a way to skip the chat and use the form.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLAN CARD -->
+      <section class="section" id="plan-card">
+        <p class="section__label">Modules · 02</p>
+        <h2 class="section__title">Plan card</h2>
+        <p class="section__intro">
+          The unit of plan comparison. Carrier + name + headline price up top, four
+          facts in a grid, two actions at the bottom. Hovering lifts the card from
+          level 1 to level 3 and translates up 2dp.
+        </p>
+
+        <div class="grid-2">
+          <article class="plan-card">
+            <div class="plan-card__head">
+              <div>
+                <div class="plan-card__carrier">Anthem · HMO</div>
+                <h3 class="plan-card__name">Blue Saver Plus</h3>
+              </div>
+              <div class="plan-card__price">
+                <div class="plan-card__price-amount">$84<span style="font-size: 0.5em; color: var(--color-on-surface-variant);"> /mo</span></div>
+                <div class="plan-card__price-meta">After your $312 subsidy</div>
+              </div>
+            </div>
+            <div class="plan-card__facts">
+              <div class="plan-card__fact"><div class="plan-card__fact-label">Deductible</div><div class="plan-card__fact-value">$2,500</div></div>
+              <div class="plan-card__fact"><div class="plan-card__fact-label">OOP Max</div><div class="plan-card__fact-value">$7,500</div></div>
+              <div class="plan-card__fact"><div class="plan-card__fact-label">Doctor</div><div class="plan-card__fact-value" style="color: var(--color-tertiary);">In-network</div></div>
+              <div class="plan-card__fact"><div class="plan-card__fact-label">Prescriptions</div><div class="plan-card__fact-value">3 of 3 covered</div></div>
+            </div>
+            <div class="plan-card__cta">
+              <button class="btn btn--text">Plan details</button>
+              <button class="btn btn--tonal">Compare</button>
+            </div>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-card__head">
+              <div>
+                <div class="plan-card__carrier">Cigna · PPO</div>
+                <h3 class="plan-card__name">Open Access Silver</h3>
+              </div>
+              <div class="plan-card__price">
+                <div class="plan-card__price-amount">$142<span style="font-size: 0.5em; color: var(--color-on-surface-variant);"> /mo</span></div>
+                <div class="plan-card__price-meta">After your $312 subsidy</div>
+              </div>
+            </div>
+            <div class="plan-card__facts">
+              <div class="plan-card__fact"><div class="plan-card__fact-label">Deductible</div><div class="plan-card__fact-value">$1,800</div></div>
+              <div class="plan-card__fact"><div class="plan-card__fact-label">OOP Max</div><div class="plan-card__fact-value">$6,200</div></div>
+              <div class="plan-card__fact"><div class="plan-card__fact-label">Doctor</div><div class="plan-card__fact-value" style="color: var(--color-error);">Out-of-network</div></div>
+              <div class="plan-card__fact"><div class="plan-card__fact-label">Prescriptions</div><div class="plan-card__fact-value">2 of 3 covered</div></div>
+            </div>
+            <div class="plan-card__cta">
+              <button class="btn btn--text">Plan details</button>
+              <button class="btn btn--tonal">Compare</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- STEPS -->
+      <section class="section" id="steps">
+        <p class="section__label">Modules · 03</p>
+        <h2 class="section__title">Steps</h2>
+        <p class="section__intro">
+          A numbered "how it works" list. Numbers ride primary-container discs. Used
+          on landing pages and case-overview moments.
+        </p>
+
+        <div class="demo">
+          <div class="steps">
+            <div class="steps__item"><div class="steps__num">1</div><div class="steps__text">Get a sign-in link in your email</div></div>
+            <div class="steps__item"><div class="steps__num">2</div><div class="steps__text">Tell us your doctors, medications, and how you use healthcare</div></div>
+            <div class="steps__item"><div class="steps__num">3</div><div class="steps__text">See plans ranked by what they'd actually cost you</div></div>
+            <div class="steps__item"><div class="steps__num">4</div><div class="steps__text">Enroll right here when you're ready</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEDE + TRUST -->
+      <section class="section" id="lede-trust">
+        <p class="section__label">Modules · 04</p>
+        <h2 class="section__title">Lede &amp; trust strip</h2>
+        <p class="section__intro">
+          The lede is an inline callout, leading icon in a primary-container disc, then
+          one or two sentences. No left-border accents. The trust strip is the row of
+          compliance badges that ends sign-up moments.
+        </p>
+
+        <div class="grid-2">
+          <div class="demo">
+            <p class="demo__label">Lede</p>
+            <div class="demo__body" style="align-items: stretch;">
+              <div class="lede" style="width: 100%;">
+                <div class="lede__icon"><span class="material-symbols-rounded">verified</span></div>
+                <p class="lede__text"><strong>Your employer set this up for you.</strong> When is paid by Northwind. You can use it free for the next 60 days while you decide.</p>
+              </div>
+            </div>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Trust strip + privacy note</p>
+            <div class="demo__body" style="flex-direction: column; align-items: flex-start; gap: var(--s-4); width: 100%;">
+              <div class="trust-strip">
+                <span class="trust-strip__item"><span class="material-symbols-rounded">verified_user</span>SOC 2</span>
+                <span class="trust-strip__item"><span class="material-symbols-rounded">lock</span>256-bit encrypted</span>
+                <span class="trust-strip__item"><span class="material-symbols-rounded">health_and_safety</span>HIPAA compliant</span>
+              </div>
+              <p class="privacy-note"><span class="material-symbols-rounded">lock</span>No one at Northwind can see your choices or health data.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================================================
+           LOADING & STATUS
+           =========================================================== -->
+
+      <section class="section" id="skeletons">
+        <p class="section__label">Loading &amp; status · 01 <span class="live-badge">Live</span></p>
+        <h2 class="section__title">Skeletons</h2>
+        <p class="section__intro">
+          Use skeletons when content's shape is known and will arrive in &lt;2s. After
+          that, use a status message, silence reads as broken.
+        </p>
+
+        <div class="grid-2">
+          <div class="demo">
+            <p class="demo__label">List skeleton</p>
+            <div class="demo__body" style="flex-direction: column; gap: var(--s-4); width: 100%; align-items: stretch;">
+              <div style="display: flex; gap: var(--s-3); align-items: center;">
+                <div class="skeleton skeleton--avatar"></div>
+                <div style="flex: 1; display: flex; flex-direction: column; gap: var(--s-2);">
+                  <div class="skeleton skeleton--title" style="width: 60%;"></div>
+                  <div class="skeleton skeleton--text" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div style="display: flex; gap: var(--s-3); align-items: center;">
+                <div class="skeleton skeleton--avatar"></div>
+                <div style="flex: 1; display: flex; flex-direction: column; gap: var(--s-2);">
+                  <div class="skeleton skeleton--title" style="width: 70%;"></div>
+                  <div class="skeleton skeleton--text" style="width: 60%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Card skeleton</p>
+            <div class="demo__body" style="flex-direction: column; gap: var(--s-3); width: 100%; align-items: stretch;">
+              <div class="skeleton skeleton--title" style="width: 50%;"></div>
+              <div class="skeleton skeleton--card"></div>
+              <div class="skeleton skeleton--text" style="width: 90%;"></div>
+              <div class="skeleton skeleton--text" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="progress">
+        <p class="section__label">Loading &amp; status · 02 <span class="live-badge">Live</span></p>
+        <h2 class="section__title">Progress</h2>
+        <p class="section__intro">
+          Circular for indeterminate moments. Linear for determinate or bounded tasks
+          (page load, file upload, multi-step submission).
+        </p>
+
+        <div class="grid-2">
+          <div class="demo">
+            <p class="demo__label">Circular · indeterminate</p>
+            <div class="demo__body" style="gap: var(--s-6);">
+              <div class="progress-circular"></div>
+              <div class="progress-circular progress-circular--lg"></div>
+            </div>
+            <p class="demo__meta">4dp border · primary at 24% bg, 100% top<br/>linear · 1.2s · 360° rotation</p>
+          </div>
+          <div class="demo">
+            <p class="demo__label">Linear · indeterminate</p>
+            <div class="demo__body" style="width: 100%;">
+              <div class="progress-linear" style="width: 100%;"></div>
+            </div>
+            <p class="demo__meta">4dp height · primary at 16% bg<br/>30% segment slides left-to-right · 1.6s · emphasized</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="empty">
+        <p class="section__label">Loading &amp; status · 03</p>
+        <h2 class="section__title">Empty state</h2>
+        <p class="section__intro">
+          Tell them why it's empty. Show what fills it. Offer the first action. Never apologize for an empty state.
+        </p>
+
+        <div class="state">
+          <div class="state__icon"><span class="material-symbols-rounded">medication</span></div>
+          <h3 class="state__title">No prescriptions yet</h3>
+          <p class="state__body">Add the medicines you take regularly and we'll show you which plans cover them, and which plans would cost you more out of pocket.</p>
+          <button class="btn btn--filled"><span class="material-symbols-rounded">add</span>Add a prescription</button>
+        </div>
+      </section>
+
+      <section class="section" id="error">
+        <p class="section__label">Loading &amp; status · 04</p>
+        <h2 class="section__title">Error state</h2>
+        <p class="section__intro">
+          State the problem in one sentence. Offer a way forward. Give them a way to
+          reach Member Services without making them feel stuck.
+        </p>
+
+        <div class="state state--error">
+          <div class="state__icon"><span class="material-symbols-rounded">cloud_off</span></div>
+          <h3 class="state__title">We couldn't reach the marketplace</h3>
+          <p class="state__body">This usually clears up in a minute. Try again, or give us a call at (800) 555-WHEN and we'll finish this with you.</p>
+          <div style="display: flex; gap: var(--s-3);">
+            <button class="btn btn--outlined">Call Member Services</button>
+            <button class="btn btn--filled">Try again</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACCESSIBILITY (NEW) -->
+      <section class="section" id="accessibility">
+        <p class="section__label">Reference</p>
+        <h2 class="section__title">Accessibility.</h2>
+        <p class="section__intro">
+          The When design system commits to WCAG 2.1 AA across every component
+          and pattern. The rules below are baseline; specific components carry
+          additional considerations called out in their anatomy.
+        </p>
+
+        <h3 class="subsection__title">Color contrast</h3>
+        <p class="subsection__body">
+          Every text-on-surface pairing in the system has been measured. Body
+          text clears 4.5:1 minimum, large text + UI elements clear 3:1
+          minimum. Full pairing table on <a href="./visual.html#color">Visual · Color</a>.
+        </p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Keyboard navigation</h3>
+        <p class="subsection__body">Every interactive element is reachable + operable with the keyboard alone. Tab order follows reading order. Focus is always visible.</p>
+        <div class="list">
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">keyboard_tab</span></div><div class="list__item-text"><div class="list__item-title">Tab / Shift+Tab</div><div class="list__item-supporting">Move forward/backward through interactive elements</div></div></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">keyboard_return</span></div><div class="list__item-text"><div class="list__item-title">Enter / Space</div><div class="list__item-supporting">Activate buttons, toggle chips, submit forms</div></div></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">close</span></div><div class="list__item-text"><div class="list__item-title">Escape</div><div class="list__item-supporting">Close dialogs, sheets, drawers, menus, the right-pane chat</div></div></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">arrow_drop_down</span></div><div class="list__item-text"><div class="list__item-title">Arrow keys</div><div class="list__item-supporting">Navigate within radio groups, menu items, tab strips</div></div></div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Focus indicators</h3>
+        <p class="subsection__body">Every interactive element has a 3dp primary outline at focus-visible, offset 2dp. Outlines are never less than 3:1 contrast with the surface behind them.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Reduced motion</h3>
+        <p class="subsection__body">A universal <code>@media (prefers-reduced-motion: reduce)</code> rule collapses every transition to 10ms and disables animation iteration. The site stays fully functional without motion.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Touch targets</h3>
+        <p class="subsection__body">Every interactive element clears WCAG 2.5.5 minimum (24×24dp visible target, 24dp hit area). Most components ship at 40dp+. Chip remove icons use a 20dp visual with 24dp hit area.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Screen reader semantics</h3>
+        <p class="subsection__body">
+          Buttons are real <code>&lt;button&gt;</code> elements. Form fields have explicit
+          <code>&lt;label&gt;</code> associations. Decorative icons are <code>aria-hidden</code>;
+          functional icons have <code>aria-label</code>. Live regions for dynamic
+          content (Jamie chat replies, snackbar messages) announce changes.
+        </p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Color-blind safe pairings</h3>
+        <p class="subsection__body">
+          Color never carries information alone. Error states pair color with an
+          icon + helper text. Selected states pair color with a leading check.
+          The full palette has been spot-checked against deuteranopia,
+          protanopia, and tritanopia simulators.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  
+    <div class="footer-meta">
+      <div class="footer-meta__line">When Design System · Design · v0.5 · May 2026</div>
+      <div class="footer-meta__credit">System design + build by <a href="#" class="footer-meta__link">Keith Maraccini Creative</a></div>
+    </div>
+  
+
+  <script>
+    // Bubble-in replay
+    const replayEl = document.getElementById('bubble-replay');
+    if (replayEl) {
+      replayEl.addEventListener('click', () => {
+        replayEl.classList.remove('bubble-in');
+        void replayEl.offsetWidth;
+        replayEl.classList.add('bubble-in');
+      });
+    }
+
+    // Chip toggle, single-select within row
+    const chipRow = document.getElementById('chip-row');
+    if (chipRow) {
+      const checkIcon = '<span class="material-symbols-rounded">check</span>';
+      chipRow.querySelectorAll('.chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const wasSelected = chip.classList.contains('is-selected');
+          chipRow.querySelectorAll('.chip').forEach(c => {
+            c.classList.remove('is-selected');
+            const icon = c.querySelector('.material-symbols-rounded');
+            if (icon) icon.remove();
+          });
+          if (!wasSelected) {
+            chip.classList.add('is-selected');
+            chip.insertAdjacentHTML('afterbegin', checkIcon);
+          }
+        });
+      });
+    }
+
+    // Tab strip click selection
+    const tabstrip = document.getElementById('tabstrip-demo');
+    if (tabstrip) {
+      tabstrip.querySelectorAll('.tabstrip__btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabstrip.querySelectorAll('.tabstrip__btn').forEach(b => b.classList.remove('is-selected'));
+          btn.classList.add('is-selected');
+        });
+      });
+    }
+
+    // Sidebar TOC, highlight active section via IntersectionObserver
+    const sections = document.querySelectorAll('.section[id]');
+    const tocLinks = document.querySelectorAll('.sidebar__item');
+    const setActive = (id) => {
+      tocLinks.forEach(link => {
+        link.classList.toggle('is-active', link.getAttribute('href') === '#' + id);
+      });
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: '-88px 0px -60% 0px', threshold: 0 });
+      sections.forEach(s => io.observe(s));
+    }
+  </script>
+</body>
+</html>

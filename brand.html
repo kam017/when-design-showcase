@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When, Brand</title>
+  <meta name="description" content="When brand foundation: who we are, who we serve, how we sound." />
+  <link rel="icon" type="image/svg+xml" href="when-logo.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" />
+  <link rel="stylesheet" href="showcase.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <a class="app-header__brand" href="./index.html">
+      <img src="when-logo.svg" alt="When" />
+      <span class="app-header__title">Design System <em>· Brand</em></span>
+    </a>
+  </header>
+
+  <div class="shell">
+    <!-- LAYER 1 — RAIL -->
+    <aside class="shell-rail" aria-label="System sections">
+      <a class="shell-rail__item" href="./index.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">home</span></span><span class="shell-rail__label">Home</span></a>
+      <a class="shell-rail__item" href="./brand.html" aria-current="page"><span class="shell-rail__icon"><span class="material-symbols-rounded">stars</span></span><span class="shell-rail__label">Brand</span></a>
+      <a class="shell-rail__item" href="./visual.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">palette</span></span><span class="shell-rail__label">Visual</span></a>
+      <a class="shell-rail__item" href="./design.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">widgets</span></span><span class="shell-rail__label">Design</span></a>
+      <a class="shell-rail__item" href="./governance.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">groups</span></span><span class="shell-rail__label">About</span></a>
+    </aside>
+
+    <!-- LAYER 2 — SUBNAV (with LAYER 3 accordion for Voice) -->
+    <aside class="shell-subnav" aria-label="On-page navigation">
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Foundation</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#overview"><span class="material-symbols-rounded">visibility</span>Overview</a>
+          <a class="shell-subnav__item" href="#audiences"><span class="material-symbols-rounded">groups_3</span>Audiences</a>
+          <a class="shell-subnav__item" href="#story"><span class="material-symbols-rounded">history_edu</span>Story</a>
+          <a class="shell-subnav__item" href="#naming"><span class="material-symbols-rounded">spellcheck</span>Naming</a>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Messaging</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#messaging"><span class="material-symbols-rounded">account_tree</span>Architecture</a>
+          <a class="shell-subnav__item" href="#boilerplate"><span class="material-symbols-rounded">content_copy</span>Boilerplate</a>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Voice</p>
+        <nav class="shell-subnav__list">
+          <details class="shell-subnav__accordion" open>
+            <summary><span class="material-symbols-rounded">record_voice_over</span>Verbal identity<span class="material-symbols-rounded shell-subnav__chevron">chevron_right</span></summary>
+            <ul class="shell-subnav__sublist">
+              <li><a class="shell-subnav__item" href="./voice.html">Voice · Member</a></li>
+              <li><a class="shell-subnav__item" href="./voice-sales.html">Voice · Sales</a></li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="shell-main">
+
+      <section class="page__hero">
+        <span class="page__eyebrow">Brand Foundation</span>
+        <h1 class="page__title">When you say goodbye, we say hello.</h1>
+        <p class="page__intro">
+          When is the AI workforce transitions platform that helps employers
+          reduce healthcare costs and protect their brand during employee life
+          events. This page is the foundation, who we are, who we serve, how
+          we sound. Everything else in the system is built on top.
+        </p>
+      </section>
+
+      <!-- 01 OVERVIEW -->
+      <section class="section" id="overview">
+        <p class="section__label">01, Foundation</p>
+        <h2 class="section__title">Who we are.</h2>
+        <p class="section__intro">
+          We exist because the gap between COBRA-era infrastructure and modern
+          workforce reality has become a financial and reputational liability
+          for employers, and a source of real stress for departing employees.
+          Our verbal identity reflects this dual mandate: business case with
+          confidence and specificity, human case with warmth and directness.
+          We never sacrifice one for the other.
+        </p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Our voice in one line</h3>
+        <p class="example">A knowledgeable ally who sees the full picture, the financial exposure, the compliance headaches, the human cost, and speaks to all of it without sugarcoating or fear-mongering.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Five voice attributes</h3>
+        <p class="subsection__body">
+          The same voice in every room. Tone shifts; voice doesn't.
+        </p>
+
+        <div class="voice-row">
+          <h3 class="voice-row__title">Direct</h3>
+          <p class="voice-row__body">
+            We lead with the point. Short sentences. Active verbs. We name the
+            problem before we offer the solution. Not blunt or aggressive, we're
+            not trying to scare anyone into buying.
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Warm</h3>
+          <p class="voice-row__body">
+            We genuinely care about the people going through transitions. We
+            acknowledge that these moments are hard. We treat readers as smart
+            professionals doing their best. Not sentimental or soft, we're not a
+            greeting card.
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Grounded</h3>
+          <p class="voice-row__body">
+            We use specific numbers, real scenarios, and concrete outcomes. When
+            we make a claim, we back it up. We speak from experience, not theory.
+            Not academic or data-heavy, data serves the story.
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Confident</h3>
+          <p class="voice-row__body">
+            We know this space. We don't hedge every statement. We use "do"
+            instead of "can help to potentially." We take positions. Not arrogant
+            or dismissive, we never talk down to the reader.
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Modern</h3>
+          <p class="voice-row__body">
+            We sound like a company built in 2024, not 1986. Our language is
+            current, clear, free of legacy insurance jargon unless we're
+            deliberately defining it. Not trendy or startup-bro, no "disrupt,"
+            no "10x," no forced casualness.
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 AUDIENCES -->
+      <section class="section" id="audiences">
+        <p class="section__label">02, Foundation</p>
+        <h2 class="section__title">Who we're talking to.</h2>
+        <p class="section__intro">
+          Everything we write passes a simple test: would an executive at a
+          10,000-person self-funded employer find this useful, specific, and
+          respectful of their time? Our primary audiences are HR and benefits
+          leaders at self-funded employers (5,000 to 30,000 employees) plus
+          channel partners who serve them.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">HR + benefits leaders</p>
+            <p class="t-body-s" style="color: var(--color-on-surface-variant); margin: 0 0 var(--s-3);">Self-funded employers, 5,000 to 30,000 employees</p>
+            <p class="t-body-m" style="margin: 0;">Measured on cost containment, employee experience, compliance, and time saved. They've been pitched by dozens of vendors who sound the same. They already know COBRA is a problem, what they need is someone who understands the nuances.</p>
+          </div>
+          <div class="card">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">Benefits TPAs</p>
+            <p class="t-body-s" style="color: var(--color-on-surface-variant); margin: 0 0 var(--s-3);">Third-party administrators serving self-funded clients</p>
+            <p class="t-body-m" style="margin: 0;">Care about client retention and service differentiation. We're the modern add-on that makes their book stickier, the answer when their CFO asks why claims spend is up.</p>
+          </div>
+          <div class="card">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">Brokers + consultants</p>
+            <p class="t-body-s" style="color: var(--color-on-surface-variant); margin: 0 0 var(--s-3);">Account-driven advisors</p>
+            <p class="t-body-m" style="margin: 0;">Care about winning and keeping accounts. We're the differentiator they bring to RFPs, the proof point that lands during renewal season.</p>
+          </div>
+          <div class="card">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">Health plans, PEOs, carriers</p>
+            <p class="t-body-s" style="color: var(--color-on-surface-variant); margin: 0 0 var(--s-3);">Service providers in the workforce-transitions stack</p>
+            <p class="t-body-m" style="margin: 0;">Complementary partners. Adverse selection is a shared problem; we route members to coverage that fits, which improves their risk pool, too.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">Departing employees</p>
+            <p class="t-body-s" style="color: var(--color-on-surface-variant); margin: 0 0 var(--s-3);">Secondary audience, end users of the platform</p>
+            <p class="t-body-m" style="margin: 0;">The people going through the transition. Most of our content speaks to buyers; the platform speaks to members. See <a href="./voice.html">Voice · Member</a> for how we sound to them.</p>
+          </div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">What our readers have in common</h3>
+        <ul style="font-family: var(--font-body); font-size: var(--type-body-large-size); line-height: var(--type-body-large-lh); margin: 0; padding-left: var(--s-5); max-width: 64ch;">
+          <li>They are busy. They skim. They need the point fast.</li>
+          <li>They've been pitched by dozens of vendors who all sound the same.</li>
+          <li>They already know COBRA is a problem; they need to see that we understand the nuances.</li>
+          <li>They are well-intentioned leaders who haven't had time to rethink a broken system. We don't blame them, we give them a better path.</li>
+          <li>Channel partners care about differentiation, client retention, and revenue. Speak to those outcomes.</li>
+        </ul>
+      </section>
+
+      <!-- 03 STORY -->
+      <section class="section" id="story">
+        <p class="section__label">03, Foundation</p>
+        <h2 class="section__title">The story.</h2>
+        <p class="section__intro">
+          When started where every good company starts, with a real problem
+          someone we knew was living through. The founder story is the proof
+          that this isn't an abstract market opportunity, it's a category we
+          built because the existing one was broken.
+        </p>
+
+        <h3 class="subsection__title">Origin</h3>
+        <p class="lede" style="margin: 0 0 var(--s-5);">
+          <span class="lede__icon"><span class="material-symbols-rounded">history_edu</span></span>
+          <span class="lede__text"><strong>Andy was suddenly on COBRA.</strong> The cost of health insurance for his family had increased by over 700%. That gap, between what employers offer at exit and what departing employees actually face, is the gap When was built to close.</span>
+        </p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Promise</h3>
+        <p class="example">COBRA claims cost millions. Bad exits damage brands. We fix both, while delivering an exceptional experience for the people going through transition.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Proof, the numbers</h3>
+        <div class="grid-3">
+          <div class="card card--outlined" style="text-align: center;">
+            <p class="t-display-s" style="margin: 0; color: var(--color-primary);">60M+</p>
+            <p class="t-body-m" style="margin: var(--s-2) 0 0; color: var(--color-on-surface-variant);">U.S. workforce transitions every year</p>
+          </div>
+          <div class="card card--outlined" style="text-align: center;">
+            <p class="t-display-s" style="margin: 0; color: var(--color-primary);">300%</p>
+            <p class="t-body-m" style="margin: var(--s-2) 0 0; color: var(--color-on-surface-variant);">More costly for COBRA participants</p>
+          </div>
+          <div class="card card--outlined" style="text-align: center;">
+            <p class="t-display-s" style="margin: 0; color: var(--color-primary);">27%</p>
+            <p class="t-body-m" style="margin: var(--s-2) 0 0; color: var(--color-on-surface-variant);">Healthcare cost increase over 4 years</p>
+          </div>
+          <div class="card card--outlined" style="text-align: center;">
+            <p class="t-display-s" style="margin: 0; color: var(--color-primary);">92%</p>
+            <p class="t-body-m" style="margin: var(--s-2) 0 0; color: var(--color-on-surface-variant);">Employee satisfaction rating</p>
+          </div>
+          <div class="card card--outlined" style="text-align: center;">
+            <p class="t-display-s" style="margin: 0; color: var(--color-primary);">6,200+</p>
+            <p class="t-body-m" style="margin: var(--s-2) 0 0; color: var(--color-on-surface-variant);">Trusted companies</p>
+          </div>
+          <div class="card card--outlined" style="text-align: center;">
+            <p class="t-display-s" style="margin: 0; color: var(--color-primary);">80%</p>
+            <p class="t-body-m" style="margin: var(--s-2) 0 0; color: var(--color-on-surface-variant);">COBRA-related claims reduction</p>
+          </div>
+        </div>
+        <p class="demo__meta" style="margin-top: var(--s-3);">Source: forwhen.com homepage, May 2026. <em>Methodology footnotes pending; the design system surfaces the number, the brand owner cites the source on the live site.</em></p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Leadership</h3>
+        <p class="subsection__body">Six leaders. Bios sourced from forwhen.com/explore/about (May 2026).</p>
+
+        <div class="grid-2">
+          <div class="card card--interactive">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Andy Hamilton</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Founder & CEO</p>
+            <p class="t-body-m" style="margin: 0;">Serial entrepreneur and multifamily tech veteran. Co-founded and led ApartmentJet through its acquisition by Expedia Group, then ran operations for their multifamily division. Brings deep expertise in scaling B2B marketplaces and a mission-driven focus on transforming the employee offboarding experience.</p>
+            <p style="margin: var(--s-3) 0 0;"><a href="https://www.forwhen.com/explore/about/andy-hamilton" target="_blank" rel="noopener" class="block--inline-link">Full bio at forwhen.com →</a></p>
+          </div>
+          <div class="card card--interactive">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Dan Wertheimer</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Founder & Chief Strategy Officer</p>
+            <p class="t-body-m" style="margin: 0;">Fortune 50 innovation executive. Led Target's digital transformation as Senior Director of Innovation, built their marketplace strategy and managed their global accelerator portfolio. 20+ years of data-driven leadership from Target and Discover Financial.</p>
+            <p style="margin: var(--s-3) 0 0;"><a href="https://www.forwhen.com/explore/about/dan-wertheimer" target="_blank" rel="noopener" class="block--inline-link">Full bio at forwhen.com →</a></p>
+          </div>
+          <div class="card card--interactive">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Patrick Koeller</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">CTO</p>
+            <p class="t-body-m" style="margin: 0;">Technical co-founder. Built Print Syndicate to $40M annual revenue, orchestrated ApartmentJet's acquisition by Expedia Group. 14+ years of engineering leadership, deep GenAI and cloud infrastructure expertise.</p>
+            <p style="margin: var(--s-3) 0 0;"><a href="https://www.forwhen.com/explore/about/patrick-koeller" target="_blank" rel="noopener" class="block--inline-link">Full bio at forwhen.com →</a></p>
+          </div>
+          <div class="card card--interactive">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Jeremy Leon</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Head of Product</p>
+            <p class="t-body-m" style="margin: 0;">Former actuary and HR/benefits expert at Tesla and Mercer. Designed benefit plans and managed costs for enterprise clients and thousands of employees. Rare mix of insurance expertise, HR systems knowledge, and product leadership.</p>
+            <p style="margin: var(--s-3) 0 0;"><a href="https://www.forwhen.com/explore/about/jeremy-leon" target="_blank" rel="noopener" class="block--inline-link">Full bio at forwhen.com →</a></p>
+          </div>
+          <div class="card card--interactive">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Carly Keller</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Director of Client Operations</p>
+            <p class="t-body-m" style="margin: 0;">Naval Academy graduate and former Navy officer. Led Operations at ApartmentJet through its Expedia acquisition. Military discipline plus expertise in scaling customer success operations and high-performing service organizations.</p>
+            <p style="margin: var(--s-3) 0 0;"><a href="https://www.forwhen.com/explore/about/carly-keller" target="_blank" rel="noopener" class="block--inline-link">Full bio at forwhen.com →</a></p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Brett Cable</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">[Title pending]</p>
+            <p class="t-body-m" style="margin: 0;">Linked from the About index on forwhen.com but not yet surfaced. Drop a `.webloc` shortcut into <code>_inbox/exec-bios/</code> and this card refreshes on the next pass.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 NAMING -->
+      <section class="section" id="naming">
+        <p class="section__label">04, Foundation</p>
+        <h2 class="section__title">Naming.</h2>
+        <p class="section__intro">
+          The shape of the name does work. "When" sets the temporal frame, the
+          moment of transition. Sentence case everywhere, no italics, no
+          all-caps except in micro-labels.
+        </p>
+
+        <div class="voice-row">
+          <h3 class="voice-row__title">When (the company)</h3>
+          <p class="voice-row__body">
+            Capital W, lowercase h-e-n. Always treated as a singular noun ("When
+            is", not "When are"). Never abbreviated. Never possessive without
+            the apostrophe ("When's mission"). The wordmark is the logotype;
+            the icon is the orange "W" curl.
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Workforce transitions</h3>
+          <p class="voice-row__body">
+            Our category. Broader than "offboarding," more specific than "life
+            events." The platform is the "AI workforce transitions platform";
+            the category we built is "workforce transitions."
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Departing employees</h3>
+          <p class="voice-row__body">
+            Human and neutral. Works for layoffs, resignations, and retirements.
+            Never "exit-event candidates" or "transitioning workforce." Plain
+            words for plain people.
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">COBRA alternative</h3>
+          <p class="voice-row__body">
+            Clear positioning. We're the modern option alongside COBRA, not a
+            replacement for it. "COBRA alternative" beats "COBRA replacement"
+            because the former is honest about what we are.
+          </p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Jamie</h3>
+          <p class="voice-row__body">
+            The AI guide inside the product. Speaks in first-person ("I"), one
+            question at a time, always offers a way to skip back to forms. See
+            <a href="./voice.html">Voice · Member</a> for the full Jamie spec.
+          </p>
+        </div>
+      </section>
+
+      <!-- 05 MESSAGING -->
+      <section class="section" id="messaging">
+        <p class="section__label">05, Messaging</p>
+        <h2 class="section__title">Architecture.</h2>
+        <p class="section__intro">
+          One positioning statement, one set of value props, tuned per
+          audience. The master message stays the same; the proof points shift.
+        </p>
+
+        <h3 class="subsection__title">Positioning statement</h3>
+        <p class="example">When is the AI workforce transitions platform that helps employers reduce healthcare costs and protect their brand during employee life events.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">Value props by audience</h3>
+        <div class="grid-2">
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-3);">For HR + benefits leaders</p>
+            <ul style="margin: 0; padding-left: var(--s-5); font-family: var(--font-body); font-size: var(--type-body-medium-size); line-height: var(--type-body-medium-lh);">
+              <li>Lower high-cost medical claims (up to 80% COBRA-related reduction).</li>
+              <li>Reduce COBRA liability and adverse selection exposure.</li>
+              <li>Protect the brand at exit, an exceptional experience for when it matters most.</li>
+              <li>Free up the benefits team, fewer COBRA questions, more strategic work.</li>
+            </ul>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-3);">For benefits TPAs</p>
+            <ul style="margin: 0; padding-left: var(--s-5); font-family: var(--font-body); font-size: var(--type-body-medium-size); line-height: var(--type-body-medium-lh);">
+              <li>Differentiate your service tier with a modern workforce-transitions add-on.</li>
+              <li>Retain clients by closing the COBRA-era infrastructure gap.</li>
+              <li>Reduce inbound questions and admin burden during open enrollment + RIF cycles.</li>
+            </ul>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-3);">For brokers + consultants</p>
+            <ul style="margin: 0; padding-left: var(--s-5); font-family: var(--font-body); font-size: var(--type-body-medium-size); line-height: var(--type-body-medium-lh);">
+              <li>A differentiator to bring to RFPs and renewal conversations.</li>
+              <li>A proof point you can quantify on a slide.</li>
+              <li>An expansion path with existing self-funded accounts.</li>
+            </ul>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-3);">For health plans, PEOs, carriers</p>
+            <ul style="margin: 0; padding-left: var(--s-5); font-family: var(--font-body); font-size: var(--type-body-medium-size); line-height: var(--type-body-medium-lh);">
+              <li>Route departing members to coverage that fits their household.</li>
+              <li>Improve risk pool by reducing adverse selection in the COBRA channel.</li>
+              <li>Co-brand a workforce-transitions track inside your service catalog.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">North star lines</h3>
+        <p class="subsection__body">The lines that best represent the target voice. Use them as calibration when writing new content.</p>
+        <p class="example">COBRA claims cost millions. Bad exits damage brands.</p>
+        <p class="example example--secondary">When you say goodbye, we say hello.</p>
+        <p class="example">Your COBRA subsidy is costing you double. Here's the fix.</p>
+        <p class="example">Andy was suddenly on COBRA. The cost of health insurance for his family had increased by over 700%.</p>
+        <p class="example">I challenge all of us to view offboarding not as an administrative task, but as a deeply human moment.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Tone spectrum</h3>
+        <p class="subsection__body">
+          The same voice in different rooms. Voice stays consistent, tone shifts
+          with the context.
+        </p>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Website</h3>
+          <p class="voice-row__body">Confident, clean, outcome-focused. Calm authority. <em>"We lower high-cost medical claims, reduce COBRA liability, and protect your brand."</em></p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Blog, thought leadership</h3>
+          <p class="voice-row__body">Informed, candid, slightly provocative. Expert at a conference. <em>"Your COBRA subsidy is costing you double. Here's the fix."</em></p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Blog, founder stories</h3>
+          <p class="voice-row__body">Personal, direct, unpretentious. Neighbor telling you a story. <em>"Andy was suddenly on COBRA. His family's insurance went up 700%."</em></p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Sales outreach</h3>
+          <p class="voice-row__body">Brief, curious, low-pressure. Casual hallway intro. <em>"Quick question, how are you handling COBRA claims exposure on your self-funded book?"</em></p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Customer success / employee-facing</h3>
+          <p class="voice-row__body">Reassuring, simple, human. A trusted friend who knows insurance. <em>"We're here to help you find coverage that fits your needs and your budget. No jargon, no pressure."</em></p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Press / PR</h3>
+          <p class="voice-row__body">Mission-driven, data-backed, measured. Credible industry voice. <em>"60M+ workforce transitions happen annually. We're building the infrastructure to make each one better."</em></p>
+        </div>
+      </section>
+
+      <!-- 06 BOILERPLATE -->
+      <section class="section" id="boilerplate">
+        <p class="section__label">06, Messaging</p>
+        <h2 class="section__title">Boilerplate.</h2>
+        <p class="section__intro">
+          Three drop-in blocks. Use the 50-word version in footers and bylines,
+          the 100-word version on partner pages and press, the 250-word version
+          for media kits and detailed pitches.
+        </p>
+
+        <h3 class="subsection__title">50 words, footer / byline</h3>
+        <div class="card card--outlined">
+          <p class="t-body-l" style="margin: 0;">When is the AI workforce transitions platform that helps employers reduce healthcare costs and protect their brand during employee life events. Lower medical claims, fewer COBRA questions, an exceptional experience when it matters most.</p>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">100 words, partner page / short press</h3>
+        <div class="card card--outlined">
+          <p class="t-body-l" style="margin: 0;">When is the AI workforce transitions platform that helps employers reduce healthcare costs and protect their brand during employee life events. By routing departing employees to coverage that actually fits their household, When lowers high-cost medical claims, cuts COBRA liability, and replaces the 1985 paperwork experience with a guided, AI-powered marketplace. Trusted by 6,200+ companies. Built by veterans of Tesla, Mercer, Target, Expedia, and Included Health. Headquartered in [city]. Learn more at forwhen.com.</p>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">250 words, media kit / detailed pitch</h3>
+        <div class="card card--outlined">
+          <p class="t-body-l" style="margin: 0 0 var(--s-3);">When is the AI workforce transitions platform that helps employers reduce healthcare costs and protect their brand during employee life events. We exist because the gap between COBRA-era infrastructure and modern workforce reality has become a financial and reputational liability, for employers, and a source of real stress for departing employees.</p>
+          <p class="t-body-l" style="margin: 0 0 var(--s-3);">By routing departing employees to coverage that fits their household, When lowers high-cost medical claims by up to 80% and cuts COBRA liability. Members enroll in minutes through an AI-guided marketplace built around their real doctors, real prescriptions, and real budget, with concierge support and health severance options layered in. Employers see fewer COBRA questions in HR's inbox, a measurable improvement in employee satisfaction at exit, and a brand protection story they can point to in annual reviews.</p>
+          <p class="t-body-l" style="margin: 0;">Trusted by 6,200+ companies. Founded in [year] by Andy Hamilton, Dan Wertheimer, and Patrick Koeller. Built by veterans of Tesla, Mercer, Target, Discover, Expedia, and Included Health. Headquartered in [city]. Press: <a href="mailto:press@forwhen.com">press@forwhen.com</a>. Learn more at <a href="https://www.forwhen.com">forwhen.com</a>.</p>
+        </div>
+
+        <p class="demo__meta" style="margin-top: var(--s-5);">
+          <strong>[bracketed]</strong> values are placeholders, replace with founding year + headquarters city + press email when known. Drop these into <code>_inbox/messaging/boilerplate.md</code> and they overwrite on the next regen.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  
+    <div class="footer-meta">
+      <div class="footer-meta__line">When Design System · Brand · v0.5 · May 2026</div>
+      <div class="footer-meta__credit">System design + build by <a href="#" class="footer-meta__link">Keith Maraccini Creative</a></div>
+    </div>
+  
+
+  <script>
+    const targets = document.querySelectorAll('[id]');
+    const tocLinks = document.querySelectorAll('.sidebar__item');
+    const setActive = (id) => {
+      tocLinks.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        const visible = entries.filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: '-88px 0px -60% 0px', threshold: 0 });
+      targets.forEach(t => io.observe(t));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When, Visual Identity</title>
+  <meta name="description" content="When visual identity: logo, color, type, iconography, imagery, motion." />
+  <link rel="icon" type="image/svg+xml" href="when-logo.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" />
+  <link rel="stylesheet" href="showcase.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <a class="app-header__brand" href="./index.html">
+      <img src="when-logo.svg" alt="When" />
+      <span class="app-header__title">Design System <em>· Visual</em></span>
+    </a>
+  </header>
+
+  <div class="shell">
+    <aside class="shell-rail" aria-label="System sections">
+      <a class="shell-rail__item" href="./index.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">home</span></span><span class="shell-rail__label">Home</span></a>
+      <a class="shell-rail__item" href="./brand.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">stars</span></span><span class="shell-rail__label">Brand</span></a>
+      <a class="shell-rail__item" href="./visual.html" aria-current="page"><span class="shell-rail__icon"><span class="material-symbols-rounded">palette</span></span><span class="shell-rail__label">Visual</span></a>
+      <a class="shell-rail__item" href="./design.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">widgets</span></span><span class="shell-rail__label">Design</span></a>
+      <a class="shell-rail__item" href="./governance.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">groups</span></span><span class="shell-rail__label">About</span></a>
+    </aside>
+
+    <aside class="shell-subnav" aria-label="On-page navigation">
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Identity</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#logo"><span class="material-symbols-rounded">flag</span>Logo</a>
+          <a class="shell-subnav__item" href="#color"><span class="material-symbols-rounded">palette</span>Color</a>
+          <a class="shell-subnav__item" href="#type"><span class="material-symbols-rounded">format_size</span>Type</a>
+          <a class="shell-subnav__item" href="#iconography"><span class="material-symbols-rounded">apps</span>Iconography</a>
+        </nav>
+      </div>
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Expression</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#imagery"><span class="material-symbols-rounded">image</span>Imagery</a>
+          <a class="shell-subnav__item" href="#motion"><span class="material-symbols-rounded">animation</span>Motion</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="shell-main">
+
+      <section class="page__hero">
+        <span class="page__eyebrow">Visual Identity</span>
+        <h1 class="page__title">How When looks.</h1>
+        <p class="page__intro">
+          The marks, palette, type, iconography, imagery, and motion that make
+          When recognizable in any room. Pulled from the official brand pack,
+          calibrated for digital + print. Download links live next to every
+          asset.
+        </p>
+      </section>
+
+      <!-- 01 LOGO -->
+      <section class="section" id="logo">
+        <p class="section__label">01, Identity</p>
+        <h2 class="section__title">Logo.</h2>
+        <p class="section__intro">
+          One wordmark, one icon, multiple lockups. The wordmark is the primary
+          mark for any context where the company name needs to register at a
+          glance. The icon (the orange "W" curl) is the app/avatar mark.
+        </p>
+
+        <h3 class="subsection__title">Primary marks</h3>
+        <div class="grid-2">
+          <div class="card" style="background: var(--color-surface-bright); display: flex; flex-direction: column; align-items: center; gap: var(--s-5);">
+            <img src="assets/logos/when-logo.svg" alt="When wordmark, primary" style="height: 56px; width: auto;" />
+            <div style="text-align: center;">
+              <p class="t-label-m" style="margin: 0; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-on-surface-variant);">Wordmark, color</p>
+              <p class="t-body-s" style="margin: var(--s-1) 0 0; color: var(--color-on-surface-variant);">SVG · #194142 + #F7911E</p>
+            </div>
+            <div style="display: flex; gap: var(--s-2); flex-wrap: wrap; justify-content: center;">
+              <a href="assets/logos/when-logo.svg" download class="btn btn--outlined btn--sm">.svg</a>
+              <a href="assets/logos/When-Logo_Wordmark-Color.eps" download class="btn btn--outlined btn--sm">.eps</a>
+            </div>
+          </div>
+          <div class="card" style="background: var(--color-surface-bright); display: flex; flex-direction: column; align-items: center; gap: var(--s-5);">
+            <img src="assets/logos/when-icon.svg" alt="When icon, the orange W curl" style="height: 56px; width: auto;" />
+            <div style="text-align: center;">
+              <p class="t-label-m" style="margin: 0; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-on-surface-variant);">Icon</p>
+              <p class="t-body-s" style="margin: var(--s-1) 0 0; color: var(--color-on-surface-variant);">SVG · #F7911E</p>
+            </div>
+            <div style="display: flex; gap: var(--s-2); flex-wrap: wrap; justify-content: center;">
+              <a href="assets/logos/when-icon.svg" download class="btn btn--outlined btn--sm">.svg</a>
+              <a href="assets/logos/When-Logo_Brand-Mark-Color.eps" download class="btn btn--outlined btn--sm">.eps</a>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Variants, all formats</h3>
+        <p class="subsection__body">
+          The full pack from the official brand kit, color, black, white, and
+          reversed. Use the variant that matches the surface: color on light, white
+          on photography or dark surfaces, black for monochrome contexts.
+        </p>
+        <div class="list">
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">image</span></div><div class="list__item-text"><div class="list__item-title">Full Lockup, Color</div><div class="list__item-supporting">Wordmark + tagline arrangement, primary color</div></div><a href="assets/logos/When-Logo_Full-Lockup-Color.eps" download class="block--inline-link">.eps</a><a href="assets/logos/When-Logo_Full-Lockup-Color.ai" download class="block--inline-link" style="margin-left: var(--s-2);">.ai</a></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">image</span></div><div class="list__item-text"><div class="list__item-title">Full Lockup, Black</div><div class="list__item-supporting">Monochrome black for limited-color print</div></div><a href="assets/logos/When-Logo_Full-Lockup-Black.eps" download class="block--inline-link">.eps</a></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">image</span></div><div class="list__item-text"><div class="list__item-title">Full Lockup, White</div><div class="list__item-supporting">For dark surfaces, photography, or single-color reversed contexts</div></div><a href="assets/logos/When-Logo_Full-Lockup-White.eps" download class="block--inline-link">.eps</a></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">image</span></div><div class="list__item-text"><div class="list__item-title">Full Lockup, Reversed</div><div class="list__item-supporting">Reverse-knockout treatment for dark or photographic backgrounds</div></div><a href="assets/logos/When-Logo_Full-Lockup-Reversed.eps" download class="block--inline-link">.eps</a></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">image</span></div><div class="list__item-text"><div class="list__item-title">Wordmark, Color / Black / White</div><div class="list__item-supporting">Wordmark alone, three contexts</div></div><a href="assets/logos/When-Logo_Wordmark-Color.eps" download class="block--inline-link">color</a><a href="assets/logos/When-Logo_Wordmark-Black.eps" download class="block--inline-link" style="margin-left: var(--s-2);">black</a><a href="assets/logos/When-Logo_Wordmark-White.eps" download class="block--inline-link" style="margin-left: var(--s-2);">white</a></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">image</span></div><div class="list__item-text"><div class="list__item-title">Brand Mark, Color / Black / White</div><div class="list__item-supporting">Icon alone for app, favicon, social avatars, partner co-brand</div></div><a href="assets/logos/When-Logo_Brand-Mark-Color.eps" download class="block--inline-link">color</a><a href="assets/logos/When-Logo_Brand-Mark-Black.eps" download class="block--inline-link" style="margin-left: var(--s-2);">black</a><a href="assets/logos/When-Logo_Brand-Mark-White.eps" download class="block--inline-link" style="margin-left: var(--s-2);">white</a></div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Clear space + minimum size</h3>
+        <p class="subsection__body">
+          Reserve clear space equal to the height of the icon around all edges
+          of the mark. Don't crowd it. Minimum display size: 24dp at 1x on
+          digital, 12mm on print. Below those sizes, use the icon-only mark.
+        </p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Don'ts</h3>
+        <div class="grid-2">
+          <div class="dont"><p class="dont__label">Don't</p>Recolor the marks. The teal and orange are the brand. Other palettes are forbidden in logo contexts.</div>
+          <div class="dont"><p class="dont__label">Don't</p>Outline, stroke, drop-shadow, gradient, or otherwise stylize the mark. The mark ships as-is.</div>
+          <div class="dont"><p class="dont__label">Don't</p>Stretch, skew, rotate beyond horizontal, or otherwise distort the mark's proportions.</div>
+          <div class="dont"><p class="dont__label">Don't</p>Place the mark on a low-contrast background where the wordmark falls below WCAG AA against the surface behind it.</div>
+        </div>
+      </section>
+
+      <!-- 02 COLOR -->
+      <section class="section" id="color">
+        <p class="section__label">02, Identity</p>
+        <h2 class="section__title">Color.</h2>
+        <p class="section__intro">
+          Two palettes ship together. <strong>Brand marks</strong> use the
+          official wordmark colors, teal #194142 and orange #F7911E. The
+          <strong>applied UI palette</strong> (Radiance, Shine, Cloud, Linen)
+          drives buttons, surfaces, and component states. Reconciling these
+          two palettes is a known open item, see SWOT.
+        </p>
+
+        <h3 class="subsection__title">Brand marks</h3>
+        <p class="subsection__body">From the official logo pack. Used inside the wordmark + icon and any logo-adjacent context.</p>
+        <div class="grid-2">
+          <div class="swatch">
+            <div class="swatch__chip" style="background: #194142; color: #FAFAF0;">Aa</div>
+            <div class="swatch__meta"><strong>Brand Teal</strong><code>#194142 · on #FAFAF0 · 13.42:1 (AAA)</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch__chip" style="background: #F7911E; color: #0F0A0A;">Aa</div>
+            <div class="swatch__meta"><strong>Brand Orange</strong><code>#F7911E · on #0F0A0A · 10.45:1 (AAA)</code></div>
+          </div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Applied UI palette</h3>
+        <p class="subsection__body">Buttons, surfaces, components, states.</p>
+        <div class="grid-3">
+          <div class="swatch"><div class="swatch__chip" style="background: #CC4400; color: #FFFFFF;">Aa</div><div class="swatch__meta"><strong>Radiance · Primary</strong><code>#CC4400 · on #FFFFFF · 5.27:1 (AA)</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #FF6600; color: #0F0A0A;">Aa</div><div class="swatch__meta"><strong>Radiance · Container</strong><code>#FF6600 · on #0F0A0A</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #FF9200; color: #0F0A0A;">Aa</div><div class="swatch__meta"><strong>Warmth · Accent</strong><code>#FF9200</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #FFBE00; color: #0F0A0A;">Aa</div><div class="swatch__meta"><strong>Shine · Secondary</strong><code>#FFBE00</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #F8E08E; color: #4A3A00;">Aa</div><div class="swatch__meta"><strong>Shine · Container</strong><code>#F8E08E</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #496767; color: #FAFAF0;">Aa</div><div class="swatch__meta"><strong>Cloud · Tertiary</strong><code>#496767</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #87A19E; color: #0F2021;">Aa</div><div class="swatch__meta"><strong>Cloud · Container</strong><code>#87A19E</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #BA1A1A; color: #FFFFFF;">Aa</div><div class="swatch__meta"><strong>Error</strong><code>#BA1A1A</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #FFDAD5; color: #410002;">Aa</div><div class="swatch__meta"><strong>Error · Container</strong><code>#FFDAD5</code></div></div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Surface ladder, Linen neutrals</h3>
+        <div class="grid-4">
+          <div class="swatch"><div class="swatch__chip" style="background: #FFFFFF; color: #241F21; border-bottom: 1px solid #C8C2B7;">Bright</div><div class="swatch__meta"><strong>surface-bright</strong><code>#FFFFFF</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #FAF7F2; color: #241F21; border-bottom: 1px solid #C8C2B7;">Surface</div><div class="swatch__meta"><strong>surface</strong><code>#FAF7F2</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #F4F1EC; color: #241F21;">Container</div><div class="swatch__meta"><strong>surface-container</strong><code>#F4F1EC</code></div></div>
+          <div class="swatch"><div class="swatch__chip" style="background: #E2DED6; color: #241F21;">Highest</div><div class="swatch__meta"><strong>container-highest</strong><code>#E2DED6</code></div></div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Downloads</h3>
+        <p class="subsection__body">Drop palette files for your design tools.</p>
+        <div class="list">
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">data_object</span></div><div class="list__item-text"><div class="list__item-title">palette.json</div><div class="list__item-supporting">Design Tokens Community Group format · all values + WCAG ratings + notes</div></div><a href="assets/colors/palette.json" download class="block--inline-link">download</a></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">palette</span></div><div class="list__item-text"><div class="list__item-title">palette.ase</div><div class="list__item-supporting">Adobe Swatch Exchange · pending, drop into <code>_inbox/colors/</code> for the next pass</div></div><span class="block--inline-link" style="opacity: 0.5;">pending</span></div>
+          <div class="list__item"><div class="list__item-avatar"><span class="material-symbols-rounded">palette</span></div><div class="list__item-text"><div class="list__item-title">palette.clr</div><div class="list__item-supporting">macOS Color Picker · pending</div></div><span class="block--inline-link" style="opacity: 0.5;">pending</span></div>
+        </div>
+      </section>
+
+      <!-- 03 TYPE -->
+      <section class="section" id="type">
+        <p class="section__label">03, Identity</p>
+        <h2 class="section__title">Type.</h2>
+        <p class="section__intro">
+          Merriweather carries every typographic role above body, display,
+          headline, title, subtitle. The serif is the brand. Body and labels
+          use Google Sans Text via a named-stack fallback chain, SF Pro on
+          Mac, Segoe UI on Windows, Roboto on Android, all calibrated for MD3
+          metrics.
+        </p>
+
+        <h3 class="subsection__title">Type scale</h3>
+        <div class="type-list">
+          <div class="type-row"><div class="type-row__meta"><strong>Display Large</strong>Merriweather · 57 / 64 · 700</div><p class="type-row__demo t-display-l">When you say goodbye</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Display Medium</strong>Merriweather · 45 / 52 · 700</div><p class="type-row__demo t-display-m">We say hello</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Display Small</strong>Merriweather · 36 / 44 · 700</div><p class="type-row__demo t-display-s">Reduce healthcare costs</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Headline Large</strong>Merriweather · 32 / 40 · 600</div><p class="type-row__demo t-headline-l">A knowledgeable ally</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Headline Medium</strong>Merriweather · 28 / 36 · 600</div><p class="type-row__demo t-headline-m">Workforce transitions</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Headline Small</strong>Merriweather · 24 / 32 · 600</div><p class="type-row__demo t-headline-s">When your plan ends, you have options.</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Title Large</strong>Merriweather · 22 / 28 · 500</div><p class="type-row__demo t-title-l">Plan details</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Title Medium</strong>Merriweather · 16 / 24 · 500</div><p class="type-row__demo t-title-m">Coverage starts March 1</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Title Small</strong>Merriweather · 14 / 20 · 500</div><p class="type-row__demo t-title-s">Monthly premium</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Body Large</strong>Google Sans Text · 16 / 24 · 400</div><p class="type-row__demo t-body-l">COBRA participants generate 2 to 3x higher healthcare costs than active employees. Most employers know this, and still mail the same paperwork they've mailed for 20 years.</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Body Medium</strong>Google Sans Text · 14 / 20 · 400</div><p class="type-row__demo t-body-m">No one at your employer can see which plans you're looking at.</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Body Small</strong>Google Sans Text · 12 / 16 · 400</div><p class="type-row__demo t-body-s">Estimate based on the household you provided. Real cost may vary.</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Label Large</strong>Google Sans Text · 14 / 20 · 500</div><p class="type-row__demo t-label-l">Schedule a Demo</p></div>
+          <div class="type-row"><div class="type-row__meta"><strong>Label Medium</strong>Google Sans Text · 12 / 16 · 500</div><p class="type-row__demo t-label-m">PRIVACY · SECURITY · ACCESSIBILITY</p></div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Font stack</h3>
+        <p class="subsection__body">Drop self-hosted .woff2 files into <code>_inbox/fonts/</code> to override the named-stack fallback.</p>
+        <div class="card card--outlined">
+          <p class="demo__meta" style="margin: 0; line-height: 1.8;">
+<span style="color: var(--color-primary); font-weight: 600;">--font-display:</span> 'Merriweather', Georgia, 'Times New Roman', serif;<br/>
+<span style="color: var(--color-primary); font-weight: 600;">--font-title:</span> 'Merriweather', Georgia, 'Times New Roman', serif;<br/>
+<span style="color: var(--color-primary); font-weight: 600;">--font-body:</span> 'Google Sans Text', 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+          </p>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Other candidate families on file</h3>
+        <p class="subsection__body">Dropped into <code>_inbox/fonts/</code> as candidates for future use, DM Serif Text, Geist, Lato, Source Serif 4. Geist (variable) is worth a look as a body alternative to Google Sans Text in places where licensed system fonts aren't available.</p>
+      </section>
+
+      <!-- 04 ICONOGRAPHY -->
+      <section class="section" id="iconography">
+        <p class="section__label">04, Identity</p>
+        <h2 class="section__title">Iconography.</h2>
+        <p class="section__intro">
+          <strong>Material Symbols Rounded</strong> leads. The MD3 Expressive
+          rounded silhouette is the canonical When icon style, warmer than
+          outlined, more confident than sharp. Variable-font across four axes,
+          FILL, weight, grade, optical size. Selection state fills the icon
+          (FILL 1); everything else stays at FILL 0. Weight follows the
+          label-weight of the surrounding text.
+        </p>
+        <p class="subsection__body" style="margin-top: var(--s-3);">
+          <strong>Fallback:</strong> if a needed glyph isn't present in
+          Material Symbols Rounded (rare; the set is comprehensive), reach for
+          a same-shape, same-spec rounded icon (Material Icons Rounded, or a
+          custom-drawn rounded SVG at 24dp grid + 2dp stroke). Never mix in an
+          outlined or sharp icon, the silhouette has to stay rounded across
+          every surface.
+        </p>
+
+        <h3 class="subsection__title">Variation axes</h3>
+        <div class="grid-2">
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">FILL · 0 → 1</p>
+            <p class="t-body-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant);">Outlined by default. Selected state fills the icon.</p>
+            <div style="display: flex; gap: var(--s-5); align-items: center;">
+              <span class="material-symbols-rounded" style="font-size: 32px; font-variation-settings: 'FILL' 0;">favorite</span>
+              <span class="material-symbols-rounded" style="font-size: 32px; font-variation-settings: 'FILL' 1;">favorite</span>
+            </div>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-2);">wght · 100 → 700</p>
+            <p class="t-body-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant);">400 default. Use 500 with label-large; 600 with title type.</p>
+            <div style="display: flex; gap: var(--s-5); align-items: center;">
+              <span class="material-symbols-rounded" style="font-size: 32px; font-variation-settings: 'wght' 200;">favorite</span>
+              <span class="material-symbols-rounded" style="font-size: 32px; font-variation-settings: 'wght' 400;">favorite</span>
+              <span class="material-symbols-rounded" style="font-size: 32px; font-variation-settings: 'wght' 700;">favorite</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Canonical icon set</h3>
+        <p class="subsection__body">The icons used most across When surfaces. Use these names; don't invent custom one-offs.</p>
+        <div class="grid-4">
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">place</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">place</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">savings</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">savings</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">favorite</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">favorite</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">medical_services</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">medical_services</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">medication</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">medication</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">verified</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">verified</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">lock</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">lock</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">health_and_safety</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">health_and_safety</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">family_restroom</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">family_restroom</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">smart_toy</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">smart_toy</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">support_agent</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">support_agent</p></div>
+          <div class="demo" style="text-align: center; padding: var(--s-4);"><span class="material-symbols-rounded" style="font-size: 32px;">view_list</span><p class="t-label-m" style="margin: var(--s-2) 0 0;">view_list</p></div>
+        </div>
+
+        <p class="subsection__body" style="margin-top: var(--s-5);">Full Material Symbols library at <a href="https://fonts.google.com/icons" target="_blank" rel="noopener" class="block--inline-link">fonts.google.com/icons</a>.</p>
+      </section>
+
+      <!-- 05 IMAGERY -->
+      <section class="section" id="imagery">
+        <p class="section__label">05, Expression</p>
+        <h2 class="section__title">Imagery.</h2>
+        <p class="section__intro">
+          When the image carries the brand more than the words, photography
+          direction matters. Until a curated photo set lands in
+          <code>_inbox/photography/</code>, this section is a direction
+          guide, what to shoot, what to commission, what to avoid.
+        </p>
+
+        <h3 class="subsection__title">Photography direction</h3>
+        <div class="grid-2">
+          <div class="do">
+            <p class="do__label">Do</p>
+            <ul style="margin: 0; padding-left: var(--s-5);">
+              <li><strong>Real people in real moments.</strong> A parent at a kitchen table reading a benefits letter. A new hire's first week. A retirement send-off.</li>
+              <li><strong>Natural light.</strong> Soft, late-afternoon, window-side. Never studio-flat.</li>
+              <li><strong>Warm neutral wardrobes.</strong> Mirrors the Linen palette, off-white, sand, muted teal, soft orange accents.</li>
+              <li><strong>Wide and quiet.</strong> Subject takes the right third, room to breathe on the left for headline overlay.</li>
+              <li><strong>Diverse, age-inclusive.</strong> Our workforce includes 22-year-olds taking COBRA seriously for the first time and 64-year-olds approaching Medicare.</li>
+            </ul>
+          </div>
+          <div class="dont">
+            <p class="dont__label">Don't</p>
+            <ul style="margin: 0; padding-left: var(--s-5);">
+              <li><strong>Stock-photo "team huddle around laptop"</strong> compositions.</li>
+              <li><strong>Posed handshakes in conference rooms.</strong> Already a B2B SaaS cliché.</li>
+              <li><strong>Doctors in white coats with stethoscopes.</strong> We're not a clinical brand.</li>
+              <li><strong>Synthetic AI imagery</strong> with extra fingers, melted hands, uncanny smiles. If the budget is tight, illustration is honest; AI mid-journey is not.</li>
+              <li><strong>HDR-saturated or overly stylized color grading.</strong> Linen surfaces deserve restraint.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="subsection__body" style="margin-top: var(--s-8);">
+          Drop reference photos or a moodboard PDF into <code>_inbox/photography/</code> and this section renders them. Until then, an illustration system, also pending, would be the second-best fallback.
+        </p>
+      </section>
+
+      <!-- 06 MOTION -->
+      <section class="section" id="motion">
+        <p class="section__label">06, Expression <span class="live-badge">Live</span></p>
+        <h2 class="section__title">Motion.</h2>
+        <p class="section__intro">
+          Calm but alive. Springs where things grow or shrink. Emphasized
+          curves where things slide in or out. No bounce on press, that reads
+          as jitter. The full token reference + live demos live on the Design
+          page; this section is the principle behind the choices.
+        </p>
+
+        <h3 class="subsection__title">Principles</h3>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Spring spatial = "alive"</h3>
+          <p class="voice-row__body">A small overshoot signals that the element has its own physics, not that it's a placeholder waiting for instructions. Reserve for layout transitions, sheet open/close, the tab strip pill-to-circle transition.</p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Spring effects = "calm"</h3>
+          <p class="voice-row__body">No overshoot. For color, opacity, blur, hint pulse. The transition is felt, not seen.</p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Emphasized = "snappy"</h3>
+          <p class="voice-row__body">For press feedback, state-layer fade, shell motion (subnav, scrim). Fast in, slow out, no overshoot.</p>
+        </div>
+        <div class="voice-row">
+          <h3 class="voice-row__title">Reduced-motion always wins</h3>
+          <p class="voice-row__body">Every animation is wrapped in <code>@media (prefers-reduced-motion: reduce)</code>. The site is still readable without movement.</p>
+        </div>
+
+        <p class="subsection__body" style="margin-top: var(--s-8);">
+          For the full token reference and live demos, see <a href="./design.html#motion-tokens">Design · Motion tokens</a>.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  
+    <div class="footer-meta">
+      <div class="footer-meta__line">When Design System · Visual · v0.5 · May 2026</div>
+      <div class="footer-meta__credit">System design + build by <a href="#" class="footer-meta__link">Keith Maraccini Creative</a></div>
+    </div>
+  
+
+  <script>
+    const targets = document.querySelectorAll('[id]');
+    const tocLinks = document.querySelectorAll('.sidebar__item');
+    const setActive = (id) => {
+      tocLinks.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        const visible = entries.filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: '-88px 0px -60% 0px', threshold: 0 });
+      targets.forEach(t => io.observe(t));
+    }
+  </script>
+</body>
+</html>

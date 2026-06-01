@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When, About</title>
+  <meta name="description" content="Who runs the When design system, how to contribute, and what changed when." />
+  <link rel="icon" type="image/svg+xml" href="when-logo.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" />
+  <link rel="stylesheet" href="showcase.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <a class="app-header__brand" href="./index.html">
+      <img src="when-logo.svg" alt="When" />
+      <span class="app-header__title">Design System <em>· About</em></span>
+    </a>
+  </header>
+
+  <div class="shell">
+    <aside class="shell-rail" aria-label="System sections">
+      <a class="shell-rail__item" href="./index.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">home</span></span><span class="shell-rail__label">Home</span></a>
+      <a class="shell-rail__item" href="./brand.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">stars</span></span><span class="shell-rail__label">Brand</span></a>
+      <a class="shell-rail__item" href="./visual.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">palette</span></span><span class="shell-rail__label">Visual</span></a>
+      <a class="shell-rail__item" href="./design.html"><span class="shell-rail__icon"><span class="material-symbols-rounded">widgets</span></span><span class="shell-rail__label">Design</span></a>
+      <a class="shell-rail__item" href="./governance.html" aria-current="page"><span class="shell-rail__icon"><span class="material-symbols-rounded">groups</span></span><span class="shell-rail__label">About</span></a>
+    </aside>
+
+    <aside class="shell-subnav" aria-label="On-page navigation">
+      <div class="shell-subnav__group">
+        <p class="shell-subnav__group-label">Governance</p>
+        <nav class="shell-subnav__list">
+          <a class="shell-subnav__item" href="#owners"><span class="material-symbols-rounded">badge</span>Owners</a>
+          <a class="shell-subnav__item" href="#contribute"><span class="material-symbols-rounded">edit_note</span>Contribute</a>
+          <a class="shell-subnav__item" href="#changelog"><span class="material-symbols-rounded">history</span>Changelog</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="shell-main">
+
+      <section class="page__hero">
+        <span class="page__eyebrow">About this system</span>
+        <h1 class="page__title">Who, how, what changed when.</h1>
+        <p class="page__intro">
+          The When design system is a living thing. People own it, others
+          contribute, and every release is documented. This page is the door
+          for anyone, internal or external, who wants to know how the system
+          works and where to plug in.
+        </p>
+      </section>
+
+      <!-- 01 OWNERS -->
+      <section class="section" id="owners">
+        <p class="section__label">01, Governance</p>
+        <h2 class="section__title">Owners.</h2>
+        <p class="section__intro">
+          Each surface of the system has a primary owner. The owner is the
+          person to ask, the person who reviews changes, and the person who
+          decides when a change ships. Roles below are placeholders, drop
+          actual contacts into <code>_inbox/exec-bios/owners.md</code> and the
+          next pass populates this table.
+        </p>
+
+        <div class="grid-2">
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Brand</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Owner pending</p>
+            <p class="t-body-m" style="margin: 0;">Verbal identity, voice, messaging architecture, naming, boilerplate. Approves any change to how the company sounds in public.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Visual identity</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Owner pending</p>
+            <p class="t-body-m" style="margin: 0;">Logo, color, type, iconography, imagery, motion principles. Owns the brand-mark download pack and any rendering of the wordmark.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Design system</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Owner pending</p>
+            <p class="t-body-m" style="margin: 0;">Tokens, components, patterns, modules. Reviews every new primitive before it lands in <code>showcase.css</code>.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Accessibility</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Owner pending</p>
+            <p class="t-body-m" style="margin: 0;">WCAG audit, keyboard nav, screen-reader patterns, reduced-motion compliance. Audits every release.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Content + voice</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Owner pending</p>
+            <p class="t-body-m" style="margin: 0;">Member voice, sales voice, smell-test reviews. Final word on copy across surfaces.</p>
+          </div>
+          <div class="card card--outlined">
+            <p class="t-title-l" style="margin: 0 0 var(--s-1);">Engineering integration</p>
+            <p class="t-label-m" style="margin: 0 0 var(--s-3); color: var(--color-on-surface-variant); text-transform: uppercase; letter-spacing: 0.5px;">Owner pending</p>
+            <p class="t-body-m" style="margin: 0;">CSS token export, code snippets, Figma library sync, future Storybook / npm package work.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 CONTRIBUTE -->
+      <section class="section" id="contribute">
+        <p class="section__label">02, Governance</p>
+        <h2 class="section__title">Contribute.</h2>
+        <p class="section__intro">
+          Anyone can propose a change. Small things go straight to the owner.
+          New components, new tokens, or anything that touches multiple
+          surfaces goes through a short RFC.
+        </p>
+
+        <h3 class="subsection__title">Small change, single owner</h3>
+        <p class="subsection__body">A copy tweak, a contrast fix, a new icon mapping, a missing state. Slack the owner, share a screenshot, ship within the week.</p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-8);">New primitive or breaking change, RFC</h3>
+        <p class="subsection__body">Anything that affects more than one surface, or changes the contract of an existing primitive, goes through an RFC. Use the template below.</p>
+
+        <div class="card card--outlined" style="font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; line-height: 1.6;">
+          <p style="margin: 0;"># RFC, [name of the change]<br/><br/>
+**Owner:** [your name]<br/>
+**Reviewers:** [primary owner + 1 cross-functional]<br/>
+**Status:** Draft / In review / Approved / Shipped / Withdrawn<br/>
+**Target release:** v0.X<br/><br/>
+## Why<br/>
+[The problem. Be specific. Cite the surfaces affected.]<br/><br/>
+## What<br/>
+[The change. New primitive, modified primitive, removed primitive.]<br/><br/>
+## Impact<br/>
+[What breaks. What migrates. What documentation needs updating.]<br/><br/>
+## Open questions<br/>
+[Anything you don't have an answer to yet.]<br/><br/>
+## Alternatives considered<br/>
+[Why this approach over the others.]</p>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Where to file</h3>
+        <p class="subsection__body">
+          For now: drop RFCs into <code>_inbox/messaging/rfcs/[rfc-name].md</code>.
+          Once the system is canonical, RFCs move to a dedicated repo
+          with versioning + review workflow.
+        </p>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Feedback channel</h3>
+        <p class="subsection__body">
+          Found a mistake? Have an idea? The fastest path is whoever owns the
+          relevant surface (table above). Cross-cutting feedback or anything
+          you're not sure where to land goes to the brand owner.
+        </p>
+      </section>
+
+      <!-- 03 CHANGELOG -->
+      <section class="section" id="changelog">
+        <p class="section__label">03, Governance</p>
+        <h2 class="section__title">Changelog.</h2>
+        <p class="section__intro">
+          Material changes to tokens, components, modules, voice, or any other
+          surface. Newest first. Breaking changes called out explicitly.
+        </p>
+
+        <div class="voice-row">
+          <h3 class="voice-row__title">v0.5 · May 2026</h3>
+          <p class="voice-row__body">
+            <strong>Brand foundation lands.</strong> Full <code>brand.html</code> page with overview,
+            audiences, story, naming, messaging architecture, and boilerplate.
+            <strong>Visual identity</strong> moves to its own page with logo download pack
+            (SVG + EPS) and the official brand teal #194142 + brand orange #F7911E
+            surfaced alongside the applied UI palette.
+            <strong>Design system</strong> migrates to <code>design.html</code> with new Layout +
+            Tokens + Accessibility sub-sections.
+            <strong>About</strong> page added with owners, contribute flow, this changelog.
+            <strong>Voice pages</strong> rebased against the canonical verbal identity
+            guidelines (Direct, Warm, Grounded, Confident, Modern).
+          </p>
+        </div>
+
+        <div class="voice-row">
+          <h3 class="voice-row__title">v0.4 · May 2026</h3>
+          <p class="voice-row__body">
+            Section-tabs strip becomes content-sized pills with elastic spring
+            transition (pill ↔ circle on container width). Button motion fixed,
+            press uses emphasized curve (no overshoot), shape-morph corner-full
+            to corner-md, scale 0.96. Voice · Sales page drafted as a parallel
+            to Voice · Member. Comprehensive motion section added.
+          </p>
+        </div>
+
+        <div class="voice-row">
+          <h3 class="voice-row__title">v0.3 · May 2026</h3>
+          <p class="voice-row__body">
+            Brand palette pulled from styleguide reference: Radiance #CC4400,
+            Shine #FFBE00, Cloud #496767, Linen surface family. Fonts swapped
+            from Roboto to Roboto Flex (later corrected to Google Sans Text +
+            Merriweather everywhere serif).
+          </p>
+        </div>
+
+        <div class="voice-row">
+          <h3 class="voice-row__title">v0.2 · May 2026</h3>
+          <p class="voice-row__body">
+            Voice · Member page shipped: 6 sections (Voice, Tone, Words, In
+            practice, Mechanics, Speakers). MD3 Expressive audit completed,
+            92 deltas catalogued.
+          </p>
+        </div>
+
+        <div class="voice-row">
+          <h3 class="voice-row__title">v0.1 · April 2026</h3>
+          <p class="voice-row__body">
+            Foundation: shell, rail, subnav, section-tabs, right-pane. Token
+            architecture (md.ref → md.sys → md.comp). Initial component set:
+            buttons, cards, chips, inputs, dialogs, snackbar.
+          </p>
+        </div>
+
+        <h3 class="subsection__title" style="margin-top: var(--s-10);">Versioning</h3>
+        <p class="subsection__body">
+          Semantic-ish: <strong>0.X</strong> while the system is pre-1.0 and
+          breaking changes can happen without a major bump. Each release notes
+          breaking changes explicitly. 1.0 lands when the brand owner signs off
+          + an external partner has built against the system.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  
+    <div class="footer-meta">
+      <div class="footer-meta__line">When Design System · About · v0.5 · May 2026</div>
+      <div class="footer-meta__credit">System design + build by <a href="#" class="footer-meta__link">Keith Maraccini Creative</a></div>
+    </div>
+  
+
+  <script>
+    const targets = document.querySelectorAll('[id]');
+    const tocLinks = document.querySelectorAll('.sidebar__item');
+    const setActive = (id) => {
+      tocLinks.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + id));
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        const visible = entries.filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: '-88px 0px -60% 0px', threshold: 0 });
+      targets.forEach(t => io.observe(t));
+    }
+  </script>
+</body>
+</html>

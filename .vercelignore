@@ -1,0 +1,7 @@
+# Keep the public deployment limited to the showcase site.
+# Internal/working material and heavy scratch assets are not deployed.
+_inbox/
+STATUS_SWOT.md
+.DS_Store
+.git
+README.md

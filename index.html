@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When, Design System</title>
+  <meta name="description" content="The When design system: brand, visual identity, design system, voice. Cross-team creative toolkit." />
+  <link rel="icon" type="image/svg+xml" href="when-logo.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" />
+  <link rel="stylesheet" href="showcase.css" />
+  <style>
+    /* Landing-page only: stacked 4-card grid */
+    .landing { max-width: 1080px; margin: 0 auto; padding: var(--s-12) var(--s-12) var(--s-24); }
+    .landing__hero { text-align: center; margin-bottom: var(--s-16); }
+    .landing__hero .page__title { max-width: 22ch; margin-left: auto; margin-right: auto; }
+    .landing__hero .page__intro { max-width: 56ch; margin-left: auto; margin-right: auto; }
+    .landing__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-5); }
+    @media (max-width: 720px) { .landing__grid { grid-template-columns: 1fr; } }
+    .landing__card {
+      background: var(--color-surface-container-lowest);
+      border: 1px solid var(--color-outline-variant);
+      border-radius: var(--shape-lg);
+      padding: var(--s-8);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-3);
+      transition:
+        box-shadow var(--motion-duration-short3) var(--motion-easing-emphasized),
+        transform  var(--motion-duration-short3) var(--motion-easing-emphasized),
+        border-color var(--motion-duration-short3) var(--motion-easing-emphasized);
+    }
+    .landing__card:hover {
+      box-shadow: var(--elev-3);
+      transform: translateY(-2px);
+      border-color: var(--color-primary);
+    }
+    .landing__card__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--shape-md);
+      background: var(--color-primary-container);
+      color: var(--color-on-primary-container);
+      display: grid;
+      place-items: center;
+      margin-bottom: var(--s-2);
+    }
+    .landing__card__icon .material-symbols-rounded { font-size: 28px; color: inherit; }
+    .landing__card__title {
+      font-family: var(--font-display);
+      font-size: var(--type-headline-small-size);
+      line-height: var(--type-headline-small-lh);
+      font-weight: 600;
+      margin: 0;
+    }
+    .landing__card__body {
+      font-family: var(--font-body);
+      font-size: var(--type-body-medium-size);
+      line-height: var(--type-body-medium-lh);
+      color: var(--color-on-surface-variant);
+      margin: 0;
+    }
+    .landing__card__sublist {
+      list-style: none;
+      margin: var(--s-3) 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-2);
+    }
+    .landing__card__sublist li {
+      font-family: var(--font-body);
+      font-size: var(--type-body-small-size);
+      color: var(--color-on-surface-variant);
+      padding: 2px 8px;
+      background: var(--color-surface-container);
+      border-radius: var(--shape-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="app-header">
+    <a class="app-header__brand" href="./index.html">
+      <img src="when-logo.svg" alt="When" />
+      <span class="app-header__title">Design System</span>
+    </a>
+    <nav class="app-nav" aria-label="Primary">
+      <a class="app-nav__link" href="./brand.html">Brand</a>
+      <a class="app-nav__link" href="./visual.html">Visual</a>
+      <a class="app-nav__link" href="./design.html">Design</a>
+      <a class="app-nav__link" href="./governance.html">About</a>
+    </nav>
+  </header>
+
+  <main class="landing">
+
+    <section class="landing__hero">
+      <span class="page__eyebrow">Design System</span>
+      <h1 class="page__title">When you say goodbye, we say hello.</h1>
+      <p class="page__intro">
+        The design system behind the When platform, the brand, the voice, the
+        visual identity, the components, the patterns. Built for our team and
+        for the partners building alongside us.
+      </p>
+    </section>
+
+    <div class="landing__grid">
+
+      <a class="landing__card" href="./brand.html">
+        <div class="landing__card__icon"><span class="material-symbols-rounded">stars</span></div>
+        <h2 class="landing__card__title">Brand</h2>
+        <p class="landing__card__body">Who we are and how we sound. Mission, audiences, story, naming, messaging architecture, boilerplate. Voice for members and for buyers.</p>
+        <ul class="landing__card__sublist">
+          <li>Overview</li><li>Audiences</li><li>Story</li><li>Naming</li><li>Messaging</li><li>Boilerplate</li><li>Voice · Member</li><li>Voice · Sales</li>
+        </ul>
+      </a>
+
+      <a class="landing__card" href="./visual.html">
+        <div class="landing__card__icon" style="background: var(--color-secondary-container); color: var(--color-on-secondary-container);"><span class="material-symbols-rounded">palette</span></div>
+        <h2 class="landing__card__title">Visual</h2>
+        <p class="landing__card__body">How we look. Logo with downloads, color palette, type scale, iconography, imagery direction, motion principles.</p>
+        <ul class="landing__card__sublist">
+          <li>Logo</li><li>Color</li><li>Type</li><li>Iconography</li><li>Imagery</li><li>Motion</li>
+        </ul>
+      </a>
+
+      <a class="landing__card" href="./design.html">
+        <div class="landing__card__icon" style="background: var(--color-tertiary-container); color: var(--color-on-tertiary-container);"><span class="material-symbols-rounded">widgets</span></div>
+        <h2 class="landing__card__title">Design</h2>
+        <p class="landing__card__body">The build kit. Layout, tokens, components, patterns, modules, accessibility. Everything you'd need to assemble a When product surface.</p>
+        <ul class="landing__card__sublist">
+          <li>Layout</li><li>Tokens</li><li>10 Components</li><li>4 Modules</li><li>Loading + status</li><li>Accessibility</li>
+        </ul>
+      </a>
+
+      <a class="landing__card" href="./governance.html">
+        <div class="landing__card__icon" style="background: var(--color-surface-container-high); color: var(--color-on-surface);"><span class="material-symbols-rounded">groups</span></div>
+        <h2 class="landing__card__title">About</h2>
+        <p class="landing__card__body">Who runs the system, how to contribute, what changed when. Owners, RFC process, changelog, contact channels.</p>
+        <ul class="landing__card__sublist">
+          <li>Owners</li><li>Contribute</li><li>Changelog</li>
+        </ul>
+      </a>
+
+    </div>
+
+    <p style="text-align: center; margin-top: var(--s-16); color: var(--color-on-surface-variant); font-size: var(--type-body-small-size);">
+      Design system v0.5 · Last updated May 2026 · See <a href="./governance.html#changelog" class="block--inline-link">Changelog</a>
+    </p>
+
+  </main>
+
+  
+    <div class="footer-meta">
+      <div class="footer-meta__line">When Design System · v0.5 · May 2026</div>
+      <div class="footer-meta__credit">System design + build by <a href="#" class="footer-meta__link">Keith Maraccini Creative</a></div>
+    </div>
+  
+
+</body>
+</html>

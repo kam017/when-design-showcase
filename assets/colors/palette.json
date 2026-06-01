@@ -1,0 +1,50 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "version": "0.5",
+  "updated": "2026-05-18",
+  "brand": {
+    "teal": {
+      "$value": "#194142",
+      "$type": "color",
+      "$description": "When wordmark color. Primary brand mark. Sourced from the official when-logo.svg.",
+      "on": "#FAFAF0",
+      "contrast-ratio-on-white": "13.42:1 (AAA)"
+    },
+    "orange": {
+      "$value": "#F7911E",
+      "$type": "color",
+      "$description": "When icon color. The 'W' mark. Sourced from the official when-logo.svg.",
+      "on": "#0F0A0A",
+      "contrast-ratio-on-black": "10.45:1 (AAA)"
+    }
+  },
+  "system": {
+    "primary": {
+      "$value": "#CC4400",
+      "$type": "color",
+      "$description": "Radiance — system primary. Currently the CTA color across components. NOTE: reconcile with brand.orange (#F7911E) in next pass — these are different shades of orange and the design system should pick one canonical primary."
+    },
+    "primary-container": { "$value": "#FF6600", "$type": "color" },
+    "secondary": { "$value": "#FFBE00", "$type": "color", "$description": "Shine yellow — secondary accent" },
+    "secondary-container": { "$value": "#F8E08E", "$type": "color" },
+    "tertiary": { "$value": "#496767", "$type": "color", "$description": "Cloud teal — tertiary. NOTE: reconcile with brand.teal (#194142)." },
+    "tertiary-container": { "$value": "#87A19E", "$type": "color" },
+    "error": { "$value": "#BA1A1A", "$type": "color" },
+    "error-container": { "$value": "#FFDAD5", "$type": "color" }
+  },
+  "surface": {
+    "background": { "$value": "#F4F1EC", "$type": "color", "$description": "Linen — page background" },
+    "surface": { "$value": "#FAF7F2", "$type": "color" },
+    "surface-bright": { "$value": "#FFFFFF", "$type": "color" },
+    "surface-dim": { "$value": "#EFEBE5", "$type": "color" },
+    "surface-container-lowest": { "$value": "#FFFFFF", "$type": "color" },
+    "surface-container-low": { "$value": "#FAF7F2", "$type": "color" },
+    "surface-container": { "$value": "#F4F1EC", "$type": "color" },
+    "surface-container-high": { "$value": "#ECE8E1", "$type": "color" },
+    "surface-container-highest": { "$value": "#E2DED6", "$type": "color" },
+    "outline": { "$value": "#8B847B", "$type": "color" },
+    "outline-variant": { "$value": "#C8C2B7", "$type": "color" },
+    "on-surface": { "$value": "#241F21", "$type": "color" },
+    "on-surface-variant": { "$value": "#5B4F47", "$type": "color" }
+  }
+}
